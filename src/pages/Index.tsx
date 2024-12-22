@@ -19,33 +19,33 @@ const Index = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const AnalogClock = () => {
-    const hours = time.getHours() % 12;
-    const minutes = time.getMinutes();
-    const seconds = time.getSeconds();
-    
-    const hourDegrees = (hours + minutes / 60) * 30;
-    const minuteDegrees = (minutes + seconds / 60) * 6;
-    const secondDegrees = seconds * 6;
-
-    return (
-      <div className="relative w-32 h-32 rounded-full border-4 border-gray-600 mx-auto">
-        <div
-          className="absolute w-1 h-12 bg-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 origin-bottom"
-          style={{ transform: `rotate(${hourDegrees}deg)` }}
-        />
-        <div
-          className="absolute w-0.5 h-14 bg-blue-400 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 origin-bottom"
-          style={{ transform: `rotate(${minuteDegrees}deg)` }}
-        />
-        <div
-          className="absolute w-0.5 h-16 bg-red-400 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 origin-bottom"
-          style={{ transform: `rotate(${secondDegrees}deg)` }}
-        />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-white rounded-full" />
-      </div>
-    );
+  const formatTime = (date: Date) => {
+    return date.toLocaleTimeString('en-US', {
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true
+    });
   };
+
+  const projects = [
+    {
+      name: "Project 1",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+    },
+    {
+      name: "Project 2",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+    },
+    {
+      name: "Project 3",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+    },
+    {
+      name: "Project 4",
+      image: "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9"
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-[#121212] text-white">
@@ -94,16 +94,28 @@ const Index = () => {
           </a>
         </div>
 
-        {/* Clock Card */}
+        {/* Clock and Music Player Card */}
         <div className="bento-card">
           <h2 className="text-lg text-gray-400 mb-4">Current Time</h2>
-          <AnalogClock />
-          <p className="text-xl font-bold mt-4">
+          <div className="text-4xl font-bold mb-4">
+            {formatTime(time)}
+          </div>
+          <p className="text-xl font-bold mb-6">
             {time.toLocaleDateString('en-US', { 
               month: 'long',
               day: 'numeric'
             })}
           </p>
+          <div className="mt-4 border-t pt-4">
+            <h3 className="text-lg text-gray-400 mb-2">Now Playing</h3>
+            <audio
+              controls
+              className="w-full"
+              src="/song.mp3"
+            >
+              Your browser does not support the audio element.
+            </audio>
+          </div>
         </div>
 
         {/* Contact Card */}
@@ -129,27 +141,20 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Projects Card with Resume Link */}
+        {/* Projects Card */}
         <div className="bento-card col-span-2">
-          <div className="flex justify-between items-center mb-6">
-            <h2 className="text-2xl font-bold">Featured Projects</h2>
-            <a 
-              href="/resume.pdf" 
-              target="_blank"
-              className="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors text-sm font-medium"
-            >
-              Download Resume
-            </a>
-          </div>
+          <h2 className="text-2xl font-bold mb-6">Featured Projects</h2>
           <div className="grid grid-cols-2 gap-6">
-            <div className="p-6 bg-card-hover rounded-lg">
-              <h3 className="text-xl font-bold mb-3">Project 1</h3>
-              <p className="text-gray-300">Description of your amazing project</p>
-            </div>
-            <div className="p-6 bg-card-hover rounded-lg">
-              <h3 className="text-xl font-bold mb-3">Project 2</h3>
-              <p className="text-gray-300">Description of another cool project</p>
-            </div>
+            {projects.map((project, index) => (
+              <div key={index} className="p-4 bg-card-hover rounded-lg">
+                <img 
+                  src={project.image} 
+                  alt={project.name}
+                  className="w-full h-48 object-cover rounded-lg mb-3"
+                />
+                <h3 className="text-xl font-bold">{project.name}</h3>
+              </div>
+            ))}
           </div>
         </div>
 
