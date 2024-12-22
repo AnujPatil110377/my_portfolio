@@ -4,10 +4,10 @@ import {
   Cpu,
   Bot,
   Brain,
-  ReactIcon,
+  React as ReactIcon,
   Server,
-  Linux,
-  Docker,
+  linux as Linux,
+  docker as Docker,
   Container
 } from "lucide-react";
 
