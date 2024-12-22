@@ -85,6 +85,22 @@ const Index = () => {
             </div>
           </div>
         </div>
+
+        {/* Spotify Playlist Card */}
+        <div className="bento-card col-span-3">
+          <h2 className="text-2xl font-bold mb-6">My Playlist</h2>
+          <div className="w-full h-[352px] bg-[#121212] rounded-lg overflow-hidden">
+            <iframe
+              src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M"
+              width="100%"
+              height="352"
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              className="rounded-lg"
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
   );
