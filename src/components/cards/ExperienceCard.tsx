@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const ExperienceCard = () => {
   return (
@@ -45,12 +46,14 @@ const ExperienceCard = () => {
         </div>
         
         <div className="bento-card h-[150px]">
-          <h2 className="text-xl font-bold mb-4">Achievements</h2>
-          <ul className="list-disc list-inside text-gray-400 space-y-2">
-            <li>Dean's List 2023</li>
-            <li>Hackathon Winner</li>
-            <li>Research Paper Published</li>
-          </ul>
+          <ScrollArea className="h-full pr-4">
+            <h2 className="text-xl font-bold mb-4">Achievements</h2>
+            <ul className="space-y-3 text-gray-400">
+              <li className="text-base leading-relaxed">Dean's List 2023</li>
+              <li className="text-base leading-relaxed">Hackathon Winner</li>
+              <li className="text-base leading-relaxed">Research Paper Published</li>
+            </ul>
+          </ScrollArea>
         </div>
       </div>
     </div>
