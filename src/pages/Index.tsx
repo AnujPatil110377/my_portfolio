@@ -11,6 +11,9 @@ import {
 } from "lucide-react";
 import ConnectCard from "../components/cards/ConnectCard";
 import ExperienceCard from "../components/cards/ExperienceCard";
+import AvatarGreeting from "../components/cards/AvatarGreeting";
+import QuoteCard from "../components/cards/QuoteCard";
+import SpotifyPlaylist from "../components/cards/SpotifyPlaylist";
 
 const Index = () => {
   const [time, setTime] = useState(new Date());
@@ -54,12 +57,17 @@ const Index = () => {
         {/* Welcome Card */}
         <div className="bento-card col-span-2">
           <h2 className="text-sm text-gray-400 mb-2">welcome</h2>
-          <h1 className="text-4xl font-bold mb-4">
-            Hi, I'm <span className="text-blue-400">Your Name</span>
-          </h1>
-          <p className="text-gray-300 text-lg">
-            A software developer with a passion for creating beautiful and functional web experiences
-          </p>
+          <div className="flex items-center space-x-8">
+            <div>
+              <h1 className="text-4xl font-bold mb-4">
+                Hi, I'm <span className="text-blue-400">Your Name</span>
+              </h1>
+              <p className="text-gray-300 text-lg">
+                A software developer with a passion for creating beautiful and functional web experiences
+              </p>
+            </div>
+            <AvatarGreeting />
+          </div>
         </div>
 
         {/* About Card */}
@@ -79,23 +87,26 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Resume Download Card */}
-        <div className="bento-card">
-          <h2 className="text-2xl font-bold mb-6">CV</h2>
-          <p className="text-gray-300 mb-6">View and download my resume by clicking on the button below</p>
-          <a 
-            href="/resume.pdf" 
-            target="_blank"
-            className="inline-flex items-center px-6 py-3 bg-[#F97316] hover:bg-[#EA580C] text-white rounded-lg transition-colors duration-200 font-medium"
-          >
-            Download resume
-            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-            </svg>
-          </a>
+        {/* CV Cards */}
+        <div className="space-y-4">
+          <div className="bento-card">
+            <h2 className="text-2xl font-bold mb-6">CV</h2>
+            <p className="text-gray-300 mb-6">View and download my resume by clicking on the button below</p>
+            <a 
+              href="/resume.pdf" 
+              target="_blank"
+              className="inline-flex items-center px-6 py-3 bg-[#F97316] hover:bg-[#EA580C] text-white rounded-lg transition-colors duration-200 font-medium"
+            >
+              Download resume
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </a>
+          </div>
+          <QuoteCard />
         </div>
 
-        {/* Clock and Music Player Card */}
+        {/* Clock and Spotify Card */}
         <div className="bento-card">
           <h2 className="text-lg text-gray-400 mb-4">Current Time</h2>
           <div className="text-4xl font-bold mb-4">
@@ -107,16 +118,7 @@ const Index = () => {
               day: 'numeric'
             })}
           </p>
-          <div className="mt-4 border-t pt-4">
-            <h3 className="text-lg text-gray-400 mb-2">Now Playing</h3>
-            <audio
-              controls
-              className="w-full"
-              src="/song.mp3"
-            >
-              Your browser does not support the audio element.
-            </audio>
-          </div>
+          <SpotifyPlaylist />
         </div>
 
         {/* Connect and Experience Cards */}
