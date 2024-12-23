@@ -14,6 +14,8 @@ import ExperienceCard from "../components/cards/ExperienceCard";
 import AvatarGreeting from "../components/cards/AvatarGreeting";
 import QuoteCard from "../components/cards/QuoteCard";
 import SpotifyPlaylist from "../components/cards/SpotifyPlaylist";
+import ProjectCard from "../components/cards/ProjectCard";
+import TechStackCard from "../components/cards/TechStackCard";
 
 const Index = () => {
   const [time, setTime] = useState(new Date());
@@ -35,19 +37,31 @@ const Index = () => {
   const projects = [
     {
       name: "Project 1",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+      description: "A full-stack web application built with React and Node.js",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      githubUrl: "https://github.com/username/project1",
+      liveUrl: "https://project1.demo"
     },
     {
       name: "Project 2",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+      description: "Mobile-first responsive design with modern animations",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+      githubUrl: "https://github.com/username/project2",
+      liveUrl: "https://project2.demo"
     },
     {
       name: "Project 3",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+      description: "AI-powered data analytics dashboard",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+      githubUrl: "https://github.com/username/project3",
+      liveUrl: "https://project3.demo"
     },
     {
       name: "Project 4",
-      image: "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9"
+      description: "Real-time collaboration platform",
+      image: "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9",
+      githubUrl: "https://github.com/username/project4",
+      liveUrl: "https://project4.demo"
     }
   ];
 
@@ -132,56 +146,13 @@ const Index = () => {
           <h2 className="text-2xl font-bold mb-6">Featured Projects</h2>
           <div className="grid grid-cols-2 gap-6">
             {projects.map((project, index) => (
-              <div key={index} className="p-4 bg-card-hover rounded-lg">
-                <img 
-                  src={project.image} 
-                  alt={project.name}
-                  className="w-full h-48 object-cover rounded-lg mb-3"
-                />
-                <h3 className="text-xl font-bold">{project.name}</h3>
-              </div>
+              <ProjectCard key={index} {...project} />
             ))}
           </div>
         </div>
 
         {/* Tech Stack Card */}
-        <div className="bento-card col-span-3">
-          <h2 className="text-2xl font-bold mb-6">Tech Stack</h2>
-          <div className="grid grid-cols-4 md:grid-cols-8 gap-8">
-            <div className="flex flex-col items-center space-y-2">
-              <Cpu className="w-10 h-10 text-blue-400" />
-              <span className="text-sm">C++</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <Bot className="w-10 h-10 text-green-400" />
-              <span className="text-sm">ROS</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <Brain className="w-10 h-10 text-red-400" />
-              <span className="text-sm">PyTorch</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <ReactIcon className="w-10 h-10 text-blue-400" />
-              <span className="text-sm">React</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <Server className="w-10 h-10 text-green-400" />
-              <span className="text-sm">Node.js</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <Linux className="w-10 h-10 text-yellow-400" />
-              <span className="text-sm">Linux</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <Docker className="w-10 h-10 text-blue-400" />
-              <span className="text-sm">Docker</span>
-            </div>
-            <div className="flex flex-col items-center space-y-2">
-              <Container className="w-10 h-10 text-blue-600" />
-              <span className="text-sm">Kubernetes</span>
-            </div>
-          </div>
-        </div>
+        <TechStackCard />
       </div>
     </div>
   );
