@@ -5,7 +5,7 @@ import {
   Code2,
   Server,
   Terminal,
-  Docker,
+  Container,
   Database,
   Globe,
 } from "lucide-react";
@@ -26,7 +26,7 @@ const TechStackCard = () => {
     ],
     tools: [
       { icon: <Terminal className="w-8 h-8" />, name: "Linux" },
-      { icon: <Docker className="w-8 h-8" />, name: "Docker" },
+      { icon: <Container className="w-8 h-8" />, name: "Docker" },
       { icon: <Database className="w-8 h-8" />, name: "MySQL" },
       { icon: <Server className="w-8 h-8" />, name: "Kubernetes" },
     ],
