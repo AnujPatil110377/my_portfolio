@@ -36,22 +36,27 @@ const ExperienceCard = () => {
 
       {/* Education and Achievements */}
       <div className="grid grid-cols-2 gap-4">
-        <div className="bento-card h-[150px]">
-          <h2 className="text-xl font-bold mb-4">Education</h2>
+        <div className="bento-card h-[150px] bg-[#0A192F] hover:bg-[#112240] transition-all duration-300">
+          <h2 className="text-xl font-bold mb-4 text-[#4FD1C5]">Education</h2>
           <div>
-            <h3 className="text-md font-semibold text-blue-400">BTech Electrical Engineering</h3>
-            <p className="text-gray-400">IIT Jodhpur</p>
-            <p className="text-sm text-gray-500">2022 - present</p>
+            <h3 className="text-md font-semibold text-[#FF66C4]">BTech Electrical Engineering</h3>
+            <p className="text-[#8892B0]">IIT Jodhpur</p>
+            <p className="text-sm text-[#8892B0]">2022 - present</p>
           </div>
         </div>
         
-        <div className="bento-card h-[150px]">
+        <div className="bento-card h-[150px] bg-[#0A192F] hover:bg-[#112240] transition-all duration-300">
           <ScrollArea className="h-full pr-4">
-            <h2 className="text-xl font-bold mb-4">Achievements</h2>
-            <ul className="space-y-3 text-gray-400">
-              <li className="text-base leading-relaxed">Dean's List 2023</li>
-              <li className="text-base leading-relaxed">Hackathon Winner</li>
-              <li className="text-base leading-relaxed">Research Paper Published</li>
+            <h2 className="text-xl font-bold mb-4 text-[#4FD1C5]">Achievements</h2>
+            <ul className="space-y-4">
+              {["Dean's List 2023", "Hackathon Winner", "Research Paper Published"].map((achievement, index) => (
+                <li 
+                  key={index}
+                  className="text-base leading-relaxed text-[#8892B0] hover:text-[#FF66C4] transition-colors duration-300 pl-4 border-l-2 border-[#4FD1C5] hover:border-[#FF66C4]"
+                >
+                  {achievement}
+                </li>
+              ))}
             </ul>
           </ScrollArea>
         </div>

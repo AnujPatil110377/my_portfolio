@@ -47,9 +47,14 @@ export default {
           "0%": { transform: "translateY(0)" },
           "100%": { transform: "translateY(-8px)" },
         },
+        "bounce-slow": {
+          "0%, 100%": { transform: "translateY(-5%)" },
+          "50%": { transform: "translateY(0)" },
+        },
       },
       animation: {
         "card-hover": "card-hover 0.2s ease-out forwards",
+        "bounce-slow": "bounce-slow 3s ease-in-out infinite",
       },
     },
   },
