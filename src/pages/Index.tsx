@@ -65,6 +65,21 @@ const Index = () => {
     }
   ];
 
+  const achievements = [
+    {
+      title: "JEE Advanced Ranking",
+      description: "Ranked 6479 in JEE Advanced among 1.5M students"
+    },
+    {
+      title: "Robotics Integration",
+      description: "Integrated Khepera IV robot with UDP protocol for velocity commands"
+    },
+    {
+      title: "LinkedIn Profile Extractor",
+      description: "Created LinkedIn Profile Extractor using SQL and AWS"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-[#121212] text-white">
       <div className="bento-grid">
@@ -74,7 +89,7 @@ const Index = () => {
           <div className="flex items-center space-x-8">
             <div>
               <h1 className="text-4xl font-bold mb-4">
-                Hi, I'm <span className="text-blue-400">Your Name</span>
+                Hi, I'm <span className="text-white">Your Name</span>
               </h1>
               <p className="text-gray-300 text-lg">
                 A software developer with a passion for creating beautiful and functional web experiences
@@ -91,12 +106,12 @@ const Index = () => {
             I specialize in building modern web applications using React, TypeScript, and other cutting-edge technologies.
           </p>
           <div className="space-y-4">
-            <p className="text-lg text-gray-400">My tools:</p>
+            <p className="text-lg text-gray-400">Interests and Hobbies:</p>
             <ul className="list-disc list-inside text-gray-300 text-lg space-y-2">
-              <li>React</li>
-              <li>TypeScript</li>
-              <li>Node.js</li>
-              <li>Tailwind CSS</li>
+              <li>Computer Science</li>
+              <li>Robotics</li>
+              <li>Machine Learning</li>
+              <li>Aeromodeling</li>
             </ul>
           </div>
         </div>
@@ -109,7 +124,7 @@ const Index = () => {
             <a 
               href="/resume.pdf" 
               target="_blank"
-              className="inline-flex items-center px-6 py-3 bg-[#F97316] hover:bg-[#EA580C] text-white rounded-lg transition-colors duration-200 font-medium"
+              className="inline-flex items-center px-6 py-3 bg-white hover:bg-gray-200 text-black rounded-lg transition-colors duration-200 font-medium"
             >
               Download resume
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -147,6 +162,19 @@ const Index = () => {
           <div className="grid grid-cols-2 gap-6">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
+            ))}
+          </div>
+        </div>
+
+        {/* Achievements Card */}
+        <div className="bento-card col-span-2">
+          <h2 className="text-2xl font-bold mb-6">Achievements</h2>
+          <div className="grid gap-6">
+            {achievements.map((achievement, index) => (
+              <div key={index} className="bg-[#1a1a1a] p-6 rounded-lg hover:bg-[#242424] transition-all duration-300">
+                <h3 className="text-xl font-semibold mb-2 text-white">{achievement.title}</h3>
+                <p className="text-gray-300">{achievement.description}</p>
+              </div>
             ))}
           </div>
         </div>
