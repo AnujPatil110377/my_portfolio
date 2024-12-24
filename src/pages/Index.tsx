@@ -62,6 +62,20 @@ const Index = () => {
       image: "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9",
       githubUrl: "https://github.com/username/project4",
       liveUrl: "https://project4.demo"
+    },
+    {
+      name: "Project 5",
+      description: "Machine Learning Model Deployment Platform",
+      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+      githubUrl: "https://github.com/username/project5",
+      liveUrl: "https://project5.demo"
+    },
+    {
+      name: "Project 6",
+      description: "IoT Device Management System",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      githubUrl: "https://github.com/username/project6",
+      liveUrl: "https://project6.demo"
     }
   ];
 
@@ -144,7 +158,7 @@ const Index = () => {
         {/* Projects Card */}
         <div className="bento-card col-span-2">
           <h2 className="text-2xl font-bold mb-6">Featured Projects</h2>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-3 gap-6">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}

@@ -5,7 +5,7 @@ const ExperienceCard = () => {
   return (
     <div className="space-y-4">
       {/* Experience Timeline */}
-      <div className="bento-card h-[200px] overflow-y-auto">
+      <div className="bento-card h-[200px] overflow-y-auto bg-[#0A192F] hover:bg-[#112240]">
         <h2 className="text-2xl font-bold mb-4 text-[#4FD1C5]">Experience</h2>
         <div className="relative space-y-4">
           <div className="absolute left-2 top-0 h-full w-0.5 bg-[#4FD1C5]/20" />
