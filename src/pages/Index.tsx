@@ -1,14 +1,4 @@
 import { useState, useEffect } from "react";
-import {
-  Cpu,
-  Bot,
-  Brain,
-  Code2 as ReactIcon,
-  Server,
-  Terminal as Linux,
-  Dock as Docker,
-  Container
-} from "lucide-react";
 import ConnectCard from "../components/cards/ConnectCard";
 import ExperienceCard from "../components/cards/ExperienceCard";
 import AvatarGreeting from "../components/cards/AvatarGreeting";
@@ -81,106 +71,75 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#121212] text-white">
-      <div className="bento-grid">
-        {/* Welcome Card */}
-        <div className="bento-card col-span-2">
-          <h2 className="text-sm text-gray-400 mb-2">welcome</h2>
-          <div className="flex items-center space-x-8">
-            <div>
-              <h1 className="text-4xl font-bold mb-4">
-                Hi, I'm <span className="text-white">Your Name</span>
-              </h1>
-              <p className="text-gray-300 text-lg">
-                A software developer with a passion for creating beautiful and functional web experiences
-              </p>
+    <div className="min-h-screen bg-[#0A192F] text-white">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 max-w-7xl mx-auto">
+        {/* Left Column */}
+        <div className="space-y-6">
+          {/* Welcome Card */}
+          <div className="bg-[#112240] rounded-lg p-6 shadow-lg">
+            <h2 className="text-sm text-[#8892B0] mb-2">welcome</h2>
+            <div className="flex items-center space-x-8">
+              <div>
+                <h1 className="text-4xl font-bold mb-4">
+                  Hi, I'm <span className="text-[#4FD1C5]">Your Name</span>
+                </h1>
+                <p className="text-[#8892B0] text-lg">
+                  A software developer with a passion for creating beautiful and functional web experiences
+                </p>
+              </div>
+              <AvatarGreeting />
             </div>
-            <AvatarGreeting />
           </div>
-        </div>
 
-        {/* About Card */}
-        <div className="bento-card row-span-2">
-          <h2 className="text-2xl font-bold mb-6">About me</h2>
-          <p className="text-gray-300 text-lg mb-6">
-            I specialize in building modern web applications using React, TypeScript, and other cutting-edge technologies.
-          </p>
-          <div className="space-y-4">
-            <p className="text-lg text-gray-400">Interests and Hobbies:</p>
-            <ul className="list-disc list-inside text-gray-300 text-lg space-y-2">
-              <li>Computer Science</li>
-              <li>Robotics</li>
-              <li>Machine Learning</li>
-              <li>Aeromodeling</li>
-            </ul>
+          {/* About Card */}
+          <div className="bg-[#112240] rounded-lg p-6 shadow-lg">
+            <h2 className="text-2xl font-bold mb-6 text-[#4FD1C5]">About me</h2>
+            <p className="text-[#8892B0] text-lg mb-6">
+              I specialize in building modern web applications using React, TypeScript, and other cutting-edge technologies.
+            </p>
+            <div className="space-y-4">
+              <p className="text-lg text-[#4FD1C5]">Interests and Hobbies:</p>
+              <ul className="list-disc list-inside text-[#8892B0] text-lg space-y-2">
+                <li>Computer Science</li>
+                <li>Robotics</li>
+                <li>Machine Learning</li>
+                <li>Aeromodeling</li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-        {/* CV Cards */}
-        <div className="space-y-4">
-          <div className="bento-card">
-            <h2 className="text-2xl font-bold mb-6">CV</h2>
-            <p className="text-gray-300 mb-6">View and download my resume by clicking on the button below</p>
-            <a 
-              href="/resume.pdf" 
-              target="_blank"
-              className="inline-flex items-center px-6 py-3 bg-white hover:bg-gray-200 text-black rounded-lg transition-colors duration-200 font-medium"
-            >
-              Download resume
-              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-            </a>
-          </div>
-          <QuoteCard />
-        </div>
-
-        {/* Clock and Spotify Card */}
-        <div className="bento-card">
-          <h2 className="text-lg text-gray-400 mb-4">Current Time</h2>
-          <div className="text-4xl font-bold mb-4">
-            {formatTime(time)}
-          </div>
-          <p className="text-xl font-bold mb-6">
-            {time.toLocaleDateString('en-US', { 
-              month: 'long',
-              day: 'numeric'
-            })}
-          </p>
-          <SpotifyPlaylist />
-        </div>
-
-        {/* Connect and Experience Cards */}
-        <div className="space-y-4">
+          {/* Connect Card */}
           <ConnectCard />
+
+          {/* Experience and Education Cards */}
           <ExperienceCard />
         </div>
 
-        {/* Projects Card */}
-        <div className="bento-card col-span-2">
-          <h2 className="text-2xl font-bold mb-6">Featured Projects</h2>
-          <div className="grid grid-cols-2 gap-6">
-            {projects.map((project, index) => (
-              <ProjectCard key={index} {...project} />
-            ))}
+        {/* Right Column */}
+        <div className="space-y-6">
+          {/* Projects Card */}
+          <div className="bg-[#112240] rounded-lg p-6 shadow-lg">
+            <h2 className="text-2xl font-bold mb-6 text-[#4FD1C5]">Featured Projects</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {projects.map((project, index) => (
+                <ProjectCard key={index} {...project} />
+              ))}
+            </div>
+          </div>
+
+          {/* Achievements Card */}
+          <div className="bg-[#112240] rounded-lg p-6 shadow-lg">
+            <h2 className="text-2xl font-bold mb-6 text-[#4FD1C5]">Achievements</h2>
+            <div className="space-y-4">
+              {achievements.map((achievement, index) => (
+                <div key={index} className="border-l-2 border-[#4FD1C5] pl-4 py-2 hover:border-[#FF66C4] transition-all">
+                  <h3 className="text-xl font-semibold text-[#FF66C4]">{achievement.title}</h3>
+                  <p className="text-[#8892B0]">{achievement.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-
-        {/* Achievements Card */}
-        <div className="bento-card col-span-2">
-          <h2 className="text-2xl font-bold mb-6">Achievements</h2>
-          <div className="grid gap-6">
-            {achievements.map((achievement, index) => (
-              <div key={index} className="bg-[#1a1a1a] p-6 rounded-lg hover:bg-[#242424] transition-all duration-300">
-                <h3 className="text-xl font-semibold mb-2 text-white">{achievement.title}</h3>
-                <p className="text-gray-300">{achievement.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Tech Stack Card */}
-        <TechStackCard />
       </div>
     </div>
   );
