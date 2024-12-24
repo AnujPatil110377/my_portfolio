@@ -167,14 +167,11 @@ const Index = () => {
         </div>
 
         {/* Achievements Card */}
-        <div className="bento-card col-span-2 mt-6">
+        <div className="bento-card col-span-2">
           <h2 className="text-2xl font-bold mb-6">Achievements</h2>
           <div className="grid gap-6">
             {achievements.map((achievement, index) => (
-              <div 
-                key={index} 
-                className="bg-[#1a1a1a] p-6 rounded-lg hover:bg-[#242424] transition-all duration-300 border border-gray-800"
-              >
+              <div key={index} className="bg-[#1a1a1a] p-6 rounded-lg hover:bg-[#242424] transition-all duration-300">
                 <h3 className="text-xl font-semibold mb-2 text-white">{achievement.title}</h3>
                 <p className="text-gray-300">{achievement.description}</p>
               </div>
