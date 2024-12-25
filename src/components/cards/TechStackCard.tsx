@@ -2,7 +2,7 @@ import CppIcon from './cpp.svg';
 import PythonIcon from './python.svg';
 import JavaScriptIcon from './javascript.svg';
 import TypeScriptIcon from './typescript.svg';
-import ROSIcon from './ros.svg';
+import ROSIcon from './nextjs.svg';
 import PyTorchIcon from './pytorch.svg';
 import ReactIcon from './react.svg';
 import NodeJsIcon from './node-js.svg';
@@ -14,22 +14,22 @@ import KubernetesIcon from './kubernetes.svg';
 const TechStackCard = () => {
   const techStacks = {
     languages: [
-      { icon: <img src={CppIcon} alt="C++" className="w-8 h-8 animate-spin-slow" />, name: "C++" },
-      { icon: <img src={PythonIcon} alt="Python" className="w-8 h-8 animate-pulse" />, name: "Python" },
+      { icon: <img src={CppIcon} alt="C++" className="w-8 h-8 animate-bounce" />, name: "C++" },
+      { icon: <img src={PythonIcon} alt="Python" className="w-8 h-8 animate-bounce" />, name: "Python" },
       { icon: <img src={JavaScriptIcon} alt="JavaScript" className="w-8 h-8 animate-bounce" />, name: "JavaScript" },
-      { icon: <img src={TypeScriptIcon} alt="TypeScript" className="w-8 h-8 animate-scale" />, name: "TypeScript" },
+      { icon: <img src={TypeScriptIcon} alt="TypeScript" className="w-8 h-8 animate-bounce" />, name: "TypeScript" },
     ],
     frameworks: [
-      { icon: <img src={ROSIcon} alt="ROS" className="w-8 h-8 animate-spin-slow" />, name: "ROS" },
-      { icon: <img src={PyTorchIcon} alt="PyTorch" className="w-8 h-8 animate-pulse" />, name: "PyTorch" },
+      { icon: <img src={ROSIcon} alt="NEXTt.Js" className="w-8 h-8 animate-bounce" />, name: "ROS" },
+      { icon: <img src={PyTorchIcon} alt="PyTorch" className="w-8 h-8 animate-bounce" />, name: "PyTorch" },
       { icon: <img src={ReactIcon} alt="React" className="w-8 h-8 animate-bounce" />, name: "React" },
-      { icon: <img src={NodeJsIcon} alt="Node.js" className="w-8 h-8 animate-scale" />, name: "Node.js" },
+      { icon: <img src={NodeJsIcon} alt="Node.js" className="w-8 h-8 animate-bounce" />, name: "Node.js" },
     ],
     tools: [
-      { icon: <img src={LinuxIcon} alt="Linux" className="w-8 h-8 animate-spin-slow" />, name: "Linux" },
-      { icon: <img src={DockerIcon} alt="Docker" className="w-8 h-8 animate-pulse" />, name: "Docker" },
+      { icon: <img src={LinuxIcon} alt="Linux" className="w-8 h-8 animate-bounce" />, name: "Linux" },
+      { icon: <img src={DockerIcon} alt="Docker" className="w-8 h-8 animate-bounce" />, name: "Docker" },
       { icon: <img src={MySQLIcon} alt="MySQL" className="w-8 h-8 animate-bounce" />, name: "MySQL" },
-      { icon: <img src={KubernetesIcon} alt="Kubernetes" className="w-8 h-8 animate-scale" />, name: "Kubernetes" },
+      { icon: <img src={KubernetesIcon} alt="Kubernetes" className="w-8 h-8 animate-bounce" />, name: "Kubernetes" },
     ],
   };
 
