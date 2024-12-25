@@ -66,8 +66,25 @@ const Index = () => {
         <div className="bento-card row-span-1">
           <h2 className="text-2xl font-bold mb-6">About me</h2>
           <p className="text-gray-300 text-md mb-6">
-          I’m an Electrical Engineering student at IIT Jodhpur, passionate about full-stack development and machine learning, focused on creating innovative solutions to real-world challenges.
+            I'm an Electrical Engineering student at IIT Jodhpur, passionate about full-stack development and machine learning, focused on creating innovative solutions to real-world challenges.
           </p>
+
+          {/* Achievements Section */}
+          <div className="mb-6">
+            <h3 className="text-xl font-bold mb-4">Achievements</h3>
+            <ul className="list-none text-gray-300 space-y-3">
+              <li>
+                Secured an <span className="text-white font-semibold">All India Rank of 6479</span> in <span className="text-white font-semibold">JEE Advanced</span>.
+              </li>
+              <li>
+                Achieved <span className="text-white font-semibold">8th rank</span> in the <span className="text-white font-semibold">Inter IIT Ideaforge High Prep</span> competition, out of 23 teams.
+              </li>
+              <li>
+                Co-authored a <span className="text-white font-semibold">research paper</span> presented at the <span className="text-white font-semibold">Indian Control Conference</span>.
+              </li>
+            </ul>
+          </div>
+
           <div className="space-y-4">
             <p className="text-md text-gray-400">Things I do other than coding:</p>
             <ul className="list-none text-gray-300 text-md space-y-2">
@@ -80,12 +97,11 @@ const Index = () => {
                 <span>Music</span>
               </li>
               <li className="flex items-center space-x-2">
-              <FontAwesomeIcon icon={faRobot} className="text-gray-400" />
-
+                <FontAwesomeIcon icon={faRobot} className="text-gray-400" />
                 <span>Robotics</span>
               </li>
               <li className="flex items-center space-x-2">
-              <FontAwesomeIcon icon={faPlane} className="text-gray-400" />
+                <FontAwesomeIcon icon={faPlane} className="text-gray-400" />
                 <span>Aeromodeling</span>
               </li>
             </ul>
