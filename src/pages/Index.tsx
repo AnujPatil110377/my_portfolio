@@ -128,15 +128,7 @@ const Index = () => {
         </div>
         {/* Projects and Additional Experience Section */}
 <div className="grid grid-cols-3 gap-4 col-span-3">
-  {/* Your existing Projects Card - keep as is */}
-  <div className="bento-card col-span-2">
-    <h2 className="text-2xl font-bold mb-4">Featured Projects</h2>
-    <div className="grid grid-cols-2 gap-4">
-      {projects.slice(0, 4).map((project, index) => (
-        <ProjectCard key={index} {...project} />
-      ))}
-    </div>
-  </div>
+ 
 
   {/* New Additional Experience Card */}
   <div className="bento-card">
