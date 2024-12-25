@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCamera, faMusic, faHiking, faBook } from '@fortawesome/free-solid-svg-icons';
 import ConnectCard from "../components/cards/ConnectCard";
 import ExperienceCard from "../components/cards/ExperienceCard";
 import AvatarGreeting from "../components/cards/AvatarGreeting";
@@ -58,9 +60,6 @@ const Index = () => {
           </div>
         </div>
 
-        import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-        import {faCamera, faMusic, faHiking, faBook} from '@fortawesome/free-solid-svg-icons';
-
         {/* About Card */}
         <div className="bento-card row-span-2">
           <h2 className="text-2xl font-bold mb-6">About me</h2>
@@ -89,8 +88,6 @@ const Index = () => {
             </ul>
           </div>
         </div>
-
-
 
         {/* CV Cards */}
         <div className="space-y-4">
