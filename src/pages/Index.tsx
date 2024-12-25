@@ -45,20 +45,28 @@ const Index = () => {
     <div className="min-h-screen bg-[#121212] text-white">
       <div className="bento-grid">
         {/* Welcome Card */}
-        <div className="bento-card col-span-2">
+        <div className="bento-card col-span-2 relative">
           <h2 className="text-lg text-gray-400 mb-2">Hola!</h2>
-          <div className="flex items-center space-x-8">
-            <div>
+          <div className="flex items-center space-x-8 relative">
+            <div className="relative">
               <h1 className="text-4xl font-bold mb-4">
                 Hi, I'm <span className="text-blue-400">Anuj Patil</span>
               </h1>
               <p className="text-gray-300 text-lg">
-              I am a passionate software developer with a strong focus on cloud services, microservices, and IoT technologies. My interests extend to machine learning and robotics, where I enjoy aermodeling as a hobby. With a solid foundation in core computer science concepts like data structures and algorithms, I continuously hone my skills through competitive coding on LeetCode. The fascinating fields of deep learning and large language models (LLMs) motivate me to stay at the forefront of technology. I am committed to leveraging my diverse skills to create impactful solutions for the future.
+                I am a passionate <span className="text-blue-400 font-semibold">software developer</span> with a strong focus on <span className="text-blue-400 font-semibold">cloud services</span>, <span className="text-blue-400 font-semibold">microservices</span>, and <span className="text-blue-400 font-semibold">IoT technologies</span>. My interests extend to <span className="text-blue-400 font-semibold">machine learning</span> and <span className="text-blue-400 font-semibold">robotics</span>, where I enjoy aeromodelling as a hobby. With a solid foundation in core computer science concepts like <span className="text-blue-400 font-semibold">data structures</span> and <span className="text-blue-400 font-semibold">algorithms</span>, I continuously hone my skills through competitive coding on <span className="text-blue-400 font-semibold">LeetCode</span>. The fascinating fields of <span className="text-blue-400 font-semibold">deep learning</span> and <span className="text-blue-400 font-semibold">large language models (LLMs)</span> motivate me to stay at the forefront of technology. I am committed to leveraging my diverse skills to create impactful solutions for the future.
               </p>
             </div>
-            <AvatarGreeting />
+            <div className="relative">
+              <AvatarGreeting />
+              {/* Line connecting avatar to paragraph */}
+              <div className="absolute top-1/2 -left-8 w-8 h-1 bg-blue-400 transform -translate-y-1/2"></div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+  );
+  
 
         {/* About Card */}
         <div className="bento-card row-span-1">
