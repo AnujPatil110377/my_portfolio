@@ -160,11 +160,12 @@ const Index = () => {
         <div className="bento-card col-span-2">
           <h2 className="text-2xl font-bold mb-6">Featured Projects</h2>
           <div className="grid grid-cols-2 gap-6">
-            {projects.map((project, index) => (
+            {projects.slice(0, 4).map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
           </div>
         </div>
+
 
         {/* Tech Stack Card */}
         <TechStackCard />
