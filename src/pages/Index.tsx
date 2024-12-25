@@ -64,7 +64,7 @@ const Index = () => {
         <div className="bento-card row-span-2">
           <h2 className="text-2xl font-bold mb-6">About me</h2>
           <p className="text-gray-300 text-lg mb-6">
-           A pre-final year Electrical Engineering student at IIT Jodhpur. I am passionate about full-stack development and machine learning, with a focus on building scalable applications and data-driven models. I sharpen my problem-solving skills on LeetCode and have a strong foundation in data structures, algorithms, and optimization. My goal is to create innovative solutions that address real-world challenges.
+          As a pre-final year Electrical Engineering student at IIT Jodhpur, I'm passionate about full-stack development and machine learning. With a solid understanding of algorithms, I'm excited to craft innovative solutions that tackle real-world challenges head-on!
           </p>
           <div className="space-y-4">
             <p className="text-lg text-gray-400">Things I do other than coding:</p>
