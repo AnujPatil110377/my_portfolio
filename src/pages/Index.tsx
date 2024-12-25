@@ -12,7 +12,7 @@ import ClockPlaylistCard from "../components/cards/ClockPlaylistCard";
 const Index = () => {
   const projects = [
     {
-      name: "Mips web IDE ",
+      name: "Project 1",
       description: "A full-stack web application built with React and Node.js",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
       githubUrl: "https://github.com/username/project1",
@@ -41,23 +41,23 @@ const Index = () => {
     }
   ];
 
- {/* Welcome Card */}
-<div className="bento-card col-span-2 relative">
-  <h2 className="text-lg text-gray-400 mb-2">Hola!</h2>
-  <div className="flex items-start justify-between space-x-16">
-    <div className="flex-1 pr-8">
-      <h1 className="text-4xl font-bold mb-4">
-        Hi, I'm <span className="text-blue-400">Anuj Patil</span>
-      </h1>
-      <p className="text-gray-300 text-lg">
-        I am a passionate <span className="text-blue-400 font-semibold">software developer</span>...
-      </p>
-    </div>
-    <div className="flex-shrink-0 border-l-2 border-white/30 pl-8"> {/* Changed to white with opacity */}
-      <AvatarGreeting />
+  {/* Welcome Card */ }
+  <div className="bento-card col-span-2 relative">
+    <h2 className="text-lg text-gray-400 mb-2">Hola!</h2>
+    <div className="flex items-start justify-between space-x-16"> {/* Changed space-x-12 to space-x-16 and items-center to items-start */}
+      <div className="flex-1 pr-8"> {/* Added pr-8 for right padding */}
+        <h1 className="text-4xl font-bold mb-4">
+          Hi, I'm <span className="text-blue-400">Anuj Patil</span>
+        </h1>
+        <p className="text-gray-300 text-lg">
+          I am a passionate <span className="text-blue-400 font-semibold">software developer</span>...
+        </p>
+      </div>
+      <div className="flex-shrink-0 border-l-2 border-gray-700 pl-8"> {/* Added border and padding */}
+        <AvatarGreeting />
+      </div>
     </div>
   </div>
-</div>
 
   {/* About Card */ }
   <div className="bento-card row-span-1">
