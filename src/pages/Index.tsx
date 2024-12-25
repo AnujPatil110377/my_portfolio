@@ -63,12 +63,12 @@ const Index = () => {
         {/* About Card */}
         <div className="bento-card row-span-2">
           <h2 className="text-2xl font-bold mb-6">About me</h2>
-          <p className="text-gray-300 text-lg mb-6">
+          <p className="text-gray-300 text-md mb-6">
           I’m an Electrical Engineering student at IIT Jodhpur, passionate about full-stack development and machine learning, focused on creating innovative solutions to real-world challenges.
           </p>
           <div className="space-y-4">
-            <p className="text-lg text-gray-400">Things I do other than coding:</p>
-            <ul className="list-none text-gray-300 text-lg space-y-2">
+            <p className="text-md text-gray-400">Things I do other than coding:</p>
+            <ul className="list-none text-gray-300 text-md space-y-2">
               <li className="flex items-center space-x-2">
                 <FontAwesomeIcon icon={faCamera} className="text-gray-400" />
                 <span>Photography</span>
