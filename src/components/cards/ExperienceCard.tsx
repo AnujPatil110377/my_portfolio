@@ -136,7 +136,7 @@ const EducationCard = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="p-6 space-y-8 bg-[#121212] rounded-lg group transition-all duration-300 hover:bg-[#1e1e1e]"
+      className="bg-[#121212] rounded-lg border-2 border-[#2a2a2a] group transition-all duration-300 hover:bg-[#1e1e1e] hover:scale-105 hover:shadow-lg"
     >
       <motion.h2 
         initial={{ opacity: 0, x: -20 }}
