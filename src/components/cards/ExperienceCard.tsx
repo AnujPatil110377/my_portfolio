@@ -62,7 +62,7 @@ const EducationCard = () => {
             <h3 className="text-xl font-semibold text-blue-400 mt-1 transition-colors duration-300">
               High School
             </h3>
-            <div className="text-gray-300 mt-1">Delhi Public School</div>
+            <div className="text-gray-300 mt-1">Vedant International School</div>
           </div>
         </motion.div>
       </div>
