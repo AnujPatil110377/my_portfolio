@@ -47,26 +47,20 @@ const Index = () => {
         {/* Welcome Card */}
         <div className="bento-card col-span-2 relative">
           <h2 className="text-lg text-gray-400 mb-2">Hola!</h2>
-          <div className="flex items-center space-x-8 relative">
-            <div className="relative">
+          <div className="flex items-center justify-between space-x-12">
+            <div className="flex-1">
               <h1 className="text-4xl font-bold mb-4">
                 Hi, I'm <span className="text-blue-400">Anuj Patil</span>
               </h1>
               <p className="text-gray-300 text-lg">
-                I am a passionate <span className="text-blue-400 font-semibold">software developer</span> with a strong focus on <span className="text-blue-400 font-semibold">cloud services</span>, <span className="text-blue-400 font-semibold">microservices</span>, and <span className="text-blue-400 font-semibold">IoT technologies</span>. My interests extend to <span className="text-blue-400 font-semibold">machine learning</span> and <span className="text-blue-400 font-semibold">robotics</span>, where I enjoy aeromodelling as a hobby. With a solid foundation in core computer science concepts like <span className="text-blue-400 font-semibold">data structures</span> and <span className="text-blue-400 font-semibold">algorithms</span>, I continuously hone my skills through competitive coding on <span className="text-blue-400 font-semibold">LeetCode</span>. The fascinating fields of <span className="text-blue-400 font-semibold">deep learning</span> and <span className="text-blue-400 font-semibold">large language models (LLMs)</span> motivate me to stay at the forefront of technology. I am committed to leveraging my diverse skills to create impactful solutions for the future.
+                I am a passionate <span className="text-blue-400 font-semibold">software developer</span> with a strong focus on <span className="text-blue-400 font-semibold">cloud services</span>, <span className="text-blue-400 font-semibold">microservices</span>, and <span className="text-blue-400 font-semibold">IoT technologies</span>. My interests extend to <span className="text-blue-400 font-semibold">machine learning</span> and <span className="text-blue-400 font-semibold">robotics</span>, where I enjoy aeromodelling as a hobby. With a solid foundation in core computer science concepts like <span className="text-blue-400 font-semibold">data structures</span> and <span className="text-blue-400 font-semibold">algorithms</span>, I continuously hone my skills through competitive coding on <span className="text-blue-400 font-semibold">LeetCode</span>. The fascinating fields of <span className="text-blue-400 font-semibold">deep learning</span> and <span className="text-blue-400 font-semibold">large language models (LLMs)</span> motivate me to stay at the forefront of technology.
               </p>
             </div>
-            <div className="relative">
+            <div className="flex-shrink-0 ml-8">
               <AvatarGreeting />
-              {/* Line connecting avatar to paragraph */}
-              <div className="absolute top-1/2 -left-8 w-8 h-1 bg-blue-400 transform -translate-y-1/2"></div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  );
-  
 
         {/* About Card */}
         <div className="bento-card row-span-1">
@@ -125,32 +119,31 @@ const Index = () => {
           <ExperienceCard />
         </div>
 
-       
         {/* Projects and Additional Experience Section */}
-<div className="grid grid-cols-3 gap-4 col-span-3">
-  {/* Your existing Projects Card - keep as is */}
-  <div className="bento-card col-span-2">
-    <h2 className="text-2xl font-bold mb-4">Featured Projects</h2>
-    <div className="grid grid-cols-2 gap-4">
-      {projects.slice(0, 4).map((project, index) => (
-        <ProjectCard key={index} {...project} />
-      ))}
-    </div>
-  </div>
+        <div className="grid grid-cols-3 gap-4 col-span-3">
+          {/* Your existing Projects Card - keep as is */}
+          <div className="bento-card col-span-2">
+            <h2 className="text-2xl font-bold mb-4">Featured Projects</h2>
+            <div className="grid grid-cols-2 gap-4">
+              {projects.slice(0, 4).map((project, index) => (
+                <ProjectCard key={index} {...project} />
+              ))}
+            </div>
+          </div>
 
-  {/* New Additional Experience Card */}
-  <div className="bento-card">
-    <h2 className="text-2xl font-bold mb-4">Additional Experience</h2>
-    <div className="space-y-4">
-      <div className="border-l-2 border-gray-600 pl-4">
-        <h3 className="text-lg font-semibold text-gray-200">Senior Developer</h3>
-        <p className="text-gray-400">Tech Company</p>
-        <p className="text-sm text-gray-500">2022 - Present</p>
-        <p className="text-gray-300 mt-2">Led development of key features and mentored junior developers.</p>
-      </div>
-    </div>
-  </div>
-</div>
+          {/* New Additional Experience Card */}
+          <div className="bento-card">
+            <h2 className="text-2xl font-bold mb-4">Additional Experience</h2>
+            <div className="space-y-4">
+              <div className="border-l-2 border-gray-600 pl-4">
+                <h3 className="text-lg font-semibold text-gray-200">Senior Developer</h3>
+                <p className="text-gray-400">Tech Company</p>
+                <p className="text-sm text-gray-500">2022 - Present</p>
+                <p className="text-gray-300 mt-2">Led development of key features and mentored junior developers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Tech Stack Card */}
         <TechStackCard />
