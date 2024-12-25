@@ -1,37 +1,35 @@
-import {
-  Code2,
-  Binary,
-  Cpu,
-  Bot,
-  Brain,
-  Server,
-  Terminal,
-  Container,
-  Database,
-  Globe,
-  Laptop,
-  Monitor
-} from "lucide-react";
+import CppIcon from './cpp.svg';
+import PythonIcon from './python.svg';
+import JavaScriptIcon from './javascript.svg';
+import TypeScriptIcon from './typescript.svg';
+import ROSIcon from './ros.svg';
+import PyTorchIcon from './pytorch.svg';
+import ReactIcon from './react.svg';
+import NodeJsIcon from './node-js.svg';
+import LinuxIcon from './linux.svg';
+import DockerIcon from './docker.svg';
+import MySQLIcon from './mysql.svg';
+import KubernetesIcon from './kubernetes.svg';
 
 const TechStackCard = () => {
   const techStacks = {
     languages: [
-      { icon: <Code2 className="w-8 h-8" />, name: "C++" },
-      { icon: <Binary className="w-8 h-8" />, name: "Python" },
-      { icon: <Code2 className="w-8 h-8" />, name: "JavaScript" },
-      { icon: <Code2 className="w-8 h-8" />, name: "TypeScript" },
+      { icon: <img src={CppIcon} alt="C++" className="w-8 h-8 animate-spin-slow" />, name: "C++" },
+      { icon: <img src={PythonIcon} alt="Python" className="w-8 h-8 animate-pulse" />, name: "Python" },
+      { icon: <img src={JavaScriptIcon} alt="JavaScript" className="w-8 h-8 animate-bounce" />, name: "JavaScript" },
+      { icon: <img src={TypeScriptIcon} alt="TypeScript" className="w-8 h-8 animate-scale" />, name: "TypeScript" },
     ],
     frameworks: [
-      { icon: <Bot className="w-8 h-8" />, name: "ROS" },
-      { icon: <Brain className="w-8 h-8" />, name: "PyTorch" },
-      { icon: <Monitor className="w-8 h-8" />, name: "React" },
-      { icon: <Server className="w-8 h-8" />, name: "Node.js" },
+      { icon: <img src={ROSIcon} alt="ROS" className="w-8 h-8 animate-spin-slow" />, name: "ROS" },
+      { icon: <img src={PyTorchIcon} alt="PyTorch" className="w-8 h-8 animate-pulse" />, name: "PyTorch" },
+      { icon: <img src={ReactIcon} alt="React" className="w-8 h-8 animate-bounce" />, name: "React" },
+      { icon: <img src={NodeJsIcon} alt="Node.js" className="w-8 h-8 animate-scale" />, name: "Node.js" },
     ],
     tools: [
-      { icon: <Terminal className="w-8 h-8" />, name: "Linux" },
-      { icon: <Container className="w-8 h-8" />, name: "Docker" },
-      { icon: <Database className="w-8 h-8" />, name: "MySQL" },
-      { icon: <Globe className="w-8 h-8" />, name: "Kubernetes" },
+      { icon: <img src={LinuxIcon} alt="Linux" className="w-8 h-8 animate-spin-slow" />, name: "Linux" },
+      { icon: <img src={DockerIcon} alt="Docker" className="w-8 h-8 animate-pulse" />, name: "Docker" },
+      { icon: <img src={MySQLIcon} alt="MySQL" className="w-8 h-8 animate-bounce" />, name: "MySQL" },
+      { icon: <img src={KubernetesIcon} alt="Kubernetes" className="w-8 h-8 animate-scale" />, name: "Kubernetes" },
     ],
   };
 

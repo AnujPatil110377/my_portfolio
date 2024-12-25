@@ -8,7 +8,6 @@ export default {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
-  prefix: "",
   theme: {
     container: {
       center: true,
@@ -51,10 +50,25 @@ export default {
           "0%, 100%": { transform: "translateY(-5%)" },
           "50%": { transform: "translateY(0)" },
         },
+        "spin-slow": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        "pulse-slow": {
+          "0%, 100%": { opacity: 1 },
+          "50%": { opacity: 0.5 },
+        },
+        "scale-slow": {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.1)" },
+        },
       },
       animation: {
         "card-hover": "card-hover 0.2s ease-out forwards",
         "bounce-slow": "bounce-slow 3s ease-in-out infinite",
+        "spin-slow": "spin-slow 8s linear infinite",
+        "pulse-slow": "pulse-slow 2s ease-in-out infinite",
+        "scale-slow": "scale-slow 2s ease-in-out infinite",
       },
     },
   },
