@@ -20,7 +20,7 @@ const TechStackCard = () => {
       { icon: <img src={TypeScriptIcon} alt="TypeScript" className="w-8 h-8 animate-bounce" />, name: "TypeScript" },
     ],
     frameworks: [
-      { icon: <img src={ROSIcon} alt="NEXTt.Js" className="w-8 h-8 animate-bounce" />, name: "ROS" },
+      { icon: <img src={ROSIcon} alt="NEXTt.Js" className="w-8 h-8 animate-bounce" />, name: "NEXTt.Js" },
       { icon: <img src={PyTorchIcon} alt="PyTorch" className="w-8 h-8 animate-bounce" />, name: "PyTorch" },
       { icon: <img src={ReactIcon} alt="React" className="w-8 h-8 animate-bounce" />, name: "React" },
       { icon: <img src={NodeJsIcon} alt="Node.js" className="w-8 h-8 animate-bounce" />, name: "Node.js" },
@@ -40,9 +40,9 @@ const TechStackCard = () => {
         {Object.entries(techStacks).map(([category, items]) => (
           <div
             key={category}
-            className="flex-1 bg-gray-800 p-6 rounded-xl hover:scale-105 hover:shadow-md transition-all duration-300"
+            className={`flex-1 ${category === 'languages' ? 'bg-[#1E293B]' : category === 'frameworks' ? 'bg-[#0D9488]' : 'bg-[#06B6D4]'} p-6 rounded-xl hover:scale-105 hover:shadow-md transition-all duration-300`}
           >
-            <h3 className="text-xl font-semibold capitalize text-gray-400 mb-6 text-center">
+            <h3 className={`text-xl font-semibold capitalize ${category === 'languages' ? 'text-white' : category === 'frameworks' ? 'text-gray-300' : 'text-[#FDE047]'} mb-6 text-center`}>
               {category}
             </h3>
             <div className="grid grid-cols-2 gap-6">
@@ -68,3 +68,4 @@ const TechStackCard = () => {
 };
 
 export default TechStackCard;
+
