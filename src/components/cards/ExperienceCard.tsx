@@ -134,24 +134,24 @@ const EducationCard = () => {
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.4 }}  {/* Slightly faster animation */}
       className="bento-card bg-[#121212] rounded-lg border-2 border-[#2a2a2a] group transition-all duration-300 hover:bg-[#1e1e1e] hover:scale-105 hover:shadow-lg"
     >
       <motion.h2 
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.2, duration: 0.5 }}
-        className="text-3xl font-bold text-white mb-4"  // Reduced margin-bottom
+        transition={{ delay: 0.2, duration: 0.4 }}  {/* Slightly faster animation */}
+        className="text-3xl font-bold text-white mb-3"  {/* One-unit reduced margin-bottom */}
       >
         Education
       </motion.h2>
       
-      <div className="space-y-8"> {/* Reduced vertical space */}
+      <div className="space-y-8"> {/* Keep the space-y value unchanged */}
         {/* BTech Education */}
         <motion.div 
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.4 }}  {/* Slightly faster animation */}
           whileHover={{ x: 10 }}
           className="flex items-start gap-4"
         >
@@ -174,7 +174,7 @@ const EducationCard = () => {
         <motion.div 
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.4 }}  {/* Slightly faster animation */}
           whileHover={{ x: 10 }}
           className="flex items-start gap-4"
         >
@@ -198,3 +198,4 @@ const EducationCard = () => {
 };
 
 export default EducationCard;
+
