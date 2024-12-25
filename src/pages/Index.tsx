@@ -58,20 +58,19 @@ const Index = () => {
           </div>
         </div>
 
-        import React from 'react';
-import { Code, Music, BookOpen, Gamepad } from 'lucide-react';
+        import { Code, Music, BookOpen, Gamepad } from 'lucide-react';
 
 const AboutCard = () => {
   const hobbies = [
-    { name: 'Coding', icon: Code, color: 'text-blue-400' },
-    { name: 'Music', icon: Music, color: 'text-purple-400' },
-    { name: 'Reading', icon: BookOpen, color: 'text-green-400' },
-    { name: 'Gaming', icon: Gamepad, color: 'text-red-400' }
+    { name: 'Coding', icon: Code, color: 'text-blue-400', bgColor: 'bg-blue-400/20' },
+    { name: 'Music', icon: Music, color: 'text-purple-400', bgColor: 'bg-purple-400/20' },
+    { name: 'Reading', icon: BookOpen, color: 'text-green-400', bgColor: 'bg-green-400/20' },
+    { name: 'Gaming', icon: Gamepad, color: 'text-red-400', bgColor: 'bg-red-400/20' }
   ];
   
   return (
-    <div className="bento-card row-span-2 bg-gray-900/50 backdrop-blur-md rounded-xl p-6 shadow-lg border border-gray-800">
-      <h2 className="text-2xl font-bold mb-6 text-white">About me</h2>
+    <div className="bento-card row-span-2">
+      <h2 className="text-2xl font-bold mb-6">About me</h2>
       <p className="text-gray-300 text-lg mb-8">
         Hello, I'm <span className="text-blue-400 font-semibold">Anuj Patil</span>, 
         a Pre-final year undergraduate at <span className="text-blue-400 font-semibold">IIT Jodhpur</span>, 
@@ -86,6 +85,7 @@ const AboutCard = () => {
         <span className="text-blue-400 font-semibold"> optimization techniques</span>. 
         My goal is to create impactful solutions that drive innovation and solve real-world challenges.
       </p>
+      
       <div className="space-y-4">
         <p className="text-lg text-gray-400">My hobbies:</p>
         <div className="grid grid-cols-2 gap-4">
@@ -94,13 +94,16 @@ const AboutCard = () => {
             return (
               <div 
                 key={index}
-                className="flex items-center space-x-3 p-3 rounded-lg bg-gray-800/50 
-                          hover:bg-gray-700/50 transition-all duration-300 cursor-pointer
-                          transform hover:scale-105"
+                className="group flex items-center space-x-3 p-3 rounded-lg 
+                          bg-gray-800/50 hover:bg-gray-700/50 
+                          transition-all duration-300 transform 
+                          hover:scale-105 cursor-pointer"
               >
-                <div className={`p-2 rounded-lg ${hobby.color} bg-opacity-20`}>
+                <div className={`p-2 rounded-lg ${hobby.bgColor}`}>
                   <IconComponent 
-                    className={`w-6 h-6 ${hobby.color}`}
+                    className={`w-6 h-6 ${hobby.color} 
+                              transition-transform duration-300 
+                              group-hover:scale-110`}
                   />
                 </div>
                 <span className="text-gray-300 text-lg">{hobby.name}</span>
