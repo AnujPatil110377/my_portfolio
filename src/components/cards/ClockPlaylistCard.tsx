@@ -11,7 +11,7 @@ const formatTime = (time: Date) => {
 
 const SpotifyPlaylist = () => {
   return (
-    <div className="mt-4 rounded-lg bg-gradient-to-br from-gray-900 to-gray-800 p-4 hover:from-gray-800 hover:to-gray-700 transition-all duration-300 group cursor-pointer">
+    <div className="mt-4 rounded-lg bg-gray-800 p-4 hover:bg-gray-700 transition-all duration-300 group cursor-pointer">
       {/* Playlist Info */}
       <div className="space-y-2">
         <div className="flex items-center space-x-2">
@@ -48,7 +48,7 @@ const ClockPlaylistCard = () => {
   }, []);
 
   return (
-    <div className="bento-card bg-[#26547C] p-6 rounded-xl">
+    <div className="bento-card bg-gray-900 p-6 rounded-xl">
       <div className="clock-section border-b border-gray-800 pb-6">
         <h2 className="text-lg text-gray-400 mb-4">Current Time</h2>
         <div className="text-4xl font-bold mb-4 text-white">
