@@ -6,7 +6,6 @@ import QuoteCard from "../components/cards/QuoteCard";
 import ProjectCard from "../components/cards/ProjectCard";
 import TechStackCard from "../components/cards/TechStackCard";
 import ClockPlaylistCard from "../components/cards/ClockPlaylistCard";
-import AboutCard from "../components/cards/AboutCard";
 
 const Index = () => {
   const projects = [
@@ -49,7 +48,7 @@ const Index = () => {
           <div className="flex items-center space-x-8">
             <div>
               <h1 className="text-4xl font-bold mb-4">
-                Hi, I'm <span className="text-blue-400">Anuj Patil</span>
+                Hi, I'm <span className="text-blue-400">Your Name</span>
               </h1>
               <p className="text-gray-300 text-lg">
                 A software developer with a passion for creating beautiful and functional web experiences
@@ -60,7 +59,21 @@ const Index = () => {
         </div>
 
         {/* About Card */}
-        <AboutCard />
+        <div className="bento-card row-span-2">
+          <h2 className="text-2xl font-bold mb-6">About me</h2>
+          <p className="text-gray-300 text-lg mb-6">
+            I specialize in building modern web applications using React, TypeScript, and other cutting-edge technologies.
+          </p>
+          <div className="space-y-4">
+            <p className="text-lg text-gray-400">My tools:</p>
+            <ul className="list-disc list-inside text-gray-300 text-lg space-y-2">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Node.js</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+        </div>
 
         {/* CV Cards */}
         <div className="space-y-4">
@@ -81,7 +94,7 @@ const Index = () => {
           <QuoteCard />
         </div>
 
-        {/* Clock and Playlist Card */}
+        {/* Clock and Spotify Card */}
         <ClockPlaylistCard />
 
         {/* Connect and Experience Cards */}
