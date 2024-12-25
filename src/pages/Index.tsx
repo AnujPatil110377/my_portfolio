@@ -46,14 +46,14 @@ const Index = () => {
       <div className="bento-grid">
         {/* Welcome Card */}
         <div className="bento-card col-span-2">
-          <h2 className="text-sm text-gray-400 mb-2">welcome</h2>
+          <h2 className="text-lg text-gray-400 mb-2">Hola!</h2>
           <div className="flex items-center space-x-8">
             <div>
               <h1 className="text-4xl font-bold mb-4">
                 Hi, I'm <span className="text-blue-400">Anuj Patil</span>
               </h1>
               <p className="text-gray-300 text-lg">
-                A software developer with a passion for creating beautiful and functional web experiences
+              I am a passionate software developer with a strong focus on cloud services, microservices, and IoT technologies. My interests extend to machine learning and robotics, where I enjoy aermodeling as a hobby. With a solid foundation in core computer science concepts like data structures and algorithms, I continuously hone my skills through competitive coding on LeetCode. The fascinating fields of deep learning and large language models (LLMs) motivate me to stay at the forefront of technology. I am committed to leveraging my diverse skills to create impactful solutions for the future.
               </p>
             </div>
             <AvatarGreeting />
