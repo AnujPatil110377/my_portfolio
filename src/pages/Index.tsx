@@ -1,39 +1,13 @@
 import { useState, useEffect } from "react";
-import {
-  Cpu,
-  Bot,
-  Brain,
-  Code2 as ReactIcon,
-  Server,
-  Terminal as Linux,
-  Dock as Docker,
-  Container
-} from "lucide-react";
 import ConnectCard from "../components/cards/ConnectCard";
 import ExperienceCard from "../components/cards/ExperienceCard";
 import AvatarGreeting from "../components/cards/AvatarGreeting";
 import QuoteCard from "../components/cards/QuoteCard";
-import SpotifyPlaylist from "../components/cards/SpotifyPlaylist";
 import ProjectCard from "../components/cards/ProjectCard";
 import TechStackCard from "../components/cards/TechStackCard";
+import ClockPlaylistCard from "../components/cards/ClockPlaylistCard";
 
 const Index = () => {
-  const [time, setTime] = useState(new Date());
-
-  useEffect(() => {
-    const timer = setInterval(() => setTime(new Date()), 1000);
-    return () => clearInterval(timer);
-  }, []);
-
-  const formatTime = (date: Date) => {
-    return date.toLocaleTimeString('en-US', {
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit',
-      hour12: true
-    });
-  };
-
   const projects = [
     {
       name: "Project 1",
@@ -63,21 +37,6 @@ const Index = () => {
       githubUrl: "https://github.com/username/project4",
       liveUrl: "https://project4.demo"
     }
-    // ,
-    // {
-    //   name: "Project 5",
-    //   description: "Machine Learning Model Deployment Platform",
-    //   image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
-    //   githubUrl: "https://github.com/username/project5",
-    //   liveUrl: "https://project5.demo"
-    // },
-    // {
-    //   name: "Project 6",
-    //   description: "IoT Device Management System",
-    //   image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-    //   githubUrl: "https://github.com/username/project6",
-    //   liveUrl: "https://project6.demo"
-    // }
   ];
 
   return (
@@ -134,91 +93,9 @@ const Index = () => {
           </div>
           <QuoteCard />
         </div>
-        {/* 
+
         {/* Clock and Spotify Card */}
-        <div className="bento-card">
-          <h2 className="text-lg text-gray-400 mb-4">Current Time</h2>
-          <div className="text-4xl font-bold mb-4">
-            {formatTime(time)}
-          </div>
-          <p className="text-xl font-bold mb-6">
-            {time.toLocaleDateString('en-US', {
-              month: 'long',
-              day: 'numeric'
-            })}
-          </p>
-          <SpotifyPlaylist />
-        </div> */}
-
-        import React, {useState, useEffect} from 'react';
-        import {Music2, Clock} from 'lucide-react';
-
-const formatTime = (time) => {
-  return time.toLocaleTimeString('en-US', {
-          hour: '2-digit',
-        minute: '2-digit',
-        hour12: true
-  });
-};
-
-const SpotifyPlaylist = () => {
-  return (
-        <div className="mt-4 rounded-lg bg-gradient-to-br from-gray-900 to-gray-800 p-4 hover:from-gray-800 hover:to-gray-700 transition-all duration-300 group cursor-pointer">
-          {/* Playlist Info */}
-          <div className="space-y-2">
-            <div className="flex items-center space-x-2">
-              <Music2 className="w-5 h-5 text-green-400" />
-              <span className="text-sm font-medium text-gray-300">PLAYLIST</span>
-            </div>
-            <h3 className="text-xl font-bold text-white">songs I was once hooked to</h3>
-            <p className="text-sm text-gray-400">
-              these songs are the ones that I was atleast once in my life obsessed with. obsessed as in, listen to it on repeat kinda obsessed
-            </p>
-
-            {/* Playlist Stats */}
-            <div className="flex items-center space-x-4 text-sm text-gray-400 mt-4">
-              <span className="flex items-center space-x-1">
-                <Clock className="w-4 h-4" />
-                <span>3hr 45min</span>
-              </span>
-              <span>• 42 songs</span>
-            </div>
-          </div>
-        </div>
-        );
-};
-
-const ClockPlaylistCard = () => {
-  const [time, setTime] = useState(new Date());
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-          setTime(new Date());
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-        return (
-        <div className="bento-card bg-gray-900 p-6 rounded-xl">
-          <div className="clock-section border-b border-gray-800 pb-6">
-            <h2 className="text-lg text-gray-400 mb-4">Current Time</h2>
-            <div className="text-4xl font-bold mb-4 text-white">
-              {formatTime(time)}
-            </div>
-            <p className="text-xl font-bold mb-2 text-white">
-              {time.toLocaleDateString('en-US', {
-                month: 'long',
-                day: 'numeric'
-              })}
-            </p>
-          </div>
-          <SpotifyPlaylist />
-        </div>
-        );
-};
-
-        export default ClockPlaylistCard;
+        <ClockPlaylistCard />
 
         {/* Connect and Experience Cards */}
         <div className="space-y-4">
@@ -235,7 +112,6 @@ const ClockPlaylistCard = () => {
             ))}
           </div>
         </div>
-
 
         {/* Tech Stack Card */}
         <TechStackCard />
