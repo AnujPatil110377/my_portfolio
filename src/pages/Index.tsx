@@ -69,21 +69,7 @@ const Index = () => {
             I'm an Electrical Engineering student at IIT Jodhpur, passionate about full-stack development and machine learning, focused on creating innovative solutions to real-world challenges.
           </p>
 
-          {/* Achievements Section */}
-          <div className="mb-6">
-            <h3 className="text-xl font-bold mb-4">Achievements</h3>
-            <ul className="list-none text-gray-300 space-y-3">
-              <li>
-                Secured an <span className="text-white font-semibold">All India Rank of 6479</span> in <span className="text-white font-semibold">JEE Advanced</span>.
-              </li>
-              <li>
-                Achieved <span className="text-white font-semibold">8th rank</span> in the <span className="text-white font-semibold">Inter IIT Ideaforge High Prep</span> competition, out of 23 teams.
-              </li>
-              <li>
-                Co-authored a <span className="text-white font-semibold">research paper</span> presented at the <span className="text-white font-semibold">Indian Control Conference</span>.
-              </li>
-            </ul>
-          </div>
+          
 
           <div className="space-y-4">
             <p className="text-md text-gray-400">Things I do other than coding:</p>
