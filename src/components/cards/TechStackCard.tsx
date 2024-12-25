@@ -1,49 +1,37 @@
 import {
+  Code2,
+  Binary,
   Cpu,
   Bot,
   Brain,
-  Code2,
   Server,
   Terminal,
   Container,
   Database,
   Globe,
+  Laptop,
+  Monitor
 } from "lucide-react";
-
-import {
-  SiCplusplus,
-  SiPython,
-  SiJavascript,
-  SiTypescript,
-  SiRos,
-  SiPytorch,
-  SiReact,
-  SiNodedotjs,
-  SiLinux,
-  SiDocker,
-  SiMysql,
-  SiKubernetes,
-} from "react-icons/si";
 
 const TechStackCard = () => {
   const techStacks = {
     languages: [
-      { icon: <SiCplusplus className="w-8 h-8" />, name: "C++" },
-      { icon: <SiPython className="w-8 h-8" />, name: "Python" },
-      { icon: <SiJavascript className="w-8 h-8" />, name: "JavaScript" },
-      { icon: <SiTypescript className="w-8 h-8" />, name: "TypeScript" },
+      { icon: <Code2 className="w-8 h-8" />, name: "C++" },
+      { icon: <Binary className="w-8 h-8" />, name: "Python" },
+      { icon: <Code2 className="w-8 h-8" />, name: "JavaScript" },
+      { icon: <Code2 className="w-8 h-8" />, name: "TypeScript" },
     ],
     frameworks: [
-      { icon: <SiRos className="w-8 h-8" />, name: "ROS" },
-      { icon: <SiPytorch className="w-8 h-8" />, name: "PyTorch" },
-      { icon: <SiReact className="w-8 h-8" />, name: "React" },
-      { icon: <SiNodedotjs className="w-8 h-8" />, name: "Node.js" },
+      { icon: <Bot className="w-8 h-8" />, name: "ROS" },
+      { icon: <Brain className="w-8 h-8" />, name: "PyTorch" },
+      { icon: <Monitor className="w-8 h-8" />, name: "React" },
+      { icon: <Server className="w-8 h-8" />, name: "Node.js" },
     ],
     tools: [
-      { icon: <SiLinux className="w-8 h-8" />, name: "Linux" },
-      { icon: <SiDocker className="w-8 h-8" />, name: "Docker" },
-      { icon: <SiMysql className="w-8 h-8" />, name: "MySQL" },
-      { icon: <SiKubernetes className="w-8 h-8" />, name: "Kubernetes" },
+      { icon: <Terminal className="w-8 h-8" />, name: "Linux" },
+      { icon: <Container className="w-8 h-8" />, name: "Docker" },
+      { icon: <Database className="w-8 h-8" />, name: "MySQL" },
+      { icon: <Globe className="w-8 h-8" />, name: "Kubernetes" },
     ],
   };
 
