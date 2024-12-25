@@ -125,37 +125,41 @@
 //   );
 // };
 
-// export default ExperienceCard;
+
 import React from 'react';
 import { BookOpen, GraduationCap } from 'lucide-react';
 
 const EducationCard = () => {
   return (
-    <div className="p-6 space-y-8 bg-[#0A192F] rounded-lg">
-      <h2 className="text-3xl font-bold text-white mb-8">Education</h2>
+    <div className="p-6 space-y-8 bg-[#0A192F] rounded-lg group transition-all duration-300 hover:bg-[#112240]">
+      <h2 className="text-3xl font-bold text-[#4FD1C5] mb-8">Education</h2>
       
       <div className="space-y-12">
         {/* BTech Education */}
-        <div className="flex items-start gap-4">
-          <div className="mt-1 p-2 bg-blue-900/30 rounded-full">
-            <GraduationCap className="w-6 h-6 text-blue-400" />
+        <div className="flex items-start gap-4 transition-all duration-300 hover:transform hover:translate-x-2">
+          <div className="mt-1 p-2 bg-[#112240] rounded-full group-hover:bg-[#1D3461]">
+            <GraduationCap className="w-6 h-6 text-[#4FD1C5]" />
           </div>
           <div>
-            <div className="text-gray-400">2022 - Present</div>
-            <h3 className="text-xl font-semibold text-white mt-1">BTech Electrical Engineering</h3>
-            <div className="text-gray-400 mt-1">IIT Jodhpur</div>
+            <div className="text-[#8892B0]">2022 - Present</div>
+            <h3 className="text-xl font-semibold text-[#FF66C4] mt-1 transition-colors duration-300">
+              BTech Electrical Engineering
+            </h3>
+            <div className="text-[#8892B0] mt-1">IIT Jodhpur</div>
           </div>
         </div>
 
         {/* High School Education */}
-        <div className="flex items-start gap-4">
-          <div className="mt-1 p-2 bg-blue-900/30 rounded-full">
-            <BookOpen className="w-6 h-6 text-blue-400" />
+        <div className="flex items-start gap-4 transition-all duration-300 hover:transform hover:translate-x-2">
+          <div className="mt-1 p-2 bg-[#112240] rounded-full group-hover:bg-[#1D3461]">
+            <BookOpen className="w-6 h-6 text-[#4FD1C5]" />
           </div>
           <div>
-            <div className="text-gray-400">2020 - 2022</div>
-            <h3 className="text-xl font-semibold text-white mt-1">High School</h3>
-            <div className="text-gray-400 mt-1">Delhi Public School</div>
+            <div className="text-[#8892B0]">2020 - 2022</div>
+            <h3 className="text-xl font-semibold text-[#FF66C4] mt-1 transition-colors duration-300">
+              High School
+            </h3>
+            <div className="text-[#8892B0] mt-1">Delhi Public School</div>
           </div>
         </div>
       </div>
