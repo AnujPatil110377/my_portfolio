@@ -50,7 +50,7 @@ const Index = () => {
           <div className="flex items-center space-x-8">
             <div>
               <h1 className="text-4xl font-bold mb-4">
-                Hi, I'm <span className="text-blue-400">Your Name</span>
+                Hi, I'm <span className="text-blue-400">Anuj Patil</span>
               </h1>
               <p className="text-gray-300 text-lg">
                 A software developer with a passion for creating beautiful and functional web experiences
@@ -61,7 +61,7 @@ const Index = () => {
         </div>
 
         {/* About Card */}
-        <div className="bento-card row-span-2">
+        <div className="bento-card row-span-1">
           <h2 className="text-2xl font-bold mb-6">About me</h2>
           <p className="text-gray-300 text-md mb-6">
           I’m an Electrical Engineering student at IIT Jodhpur, passionate about full-stack development and machine learning, focused on creating innovative solutions to real-world challenges.
@@ -118,7 +118,7 @@ const Index = () => {
         </div>
 
         {/* Projects Card */}
-        <div className="bento-card col-span-2">
+        <div className="bento-card col-span-2 ">
           <h2 className="text-2xl font-bold mb-4">Featured Projects</h2>
           <div className="grid grid-cols-2 gap-4">
             {projects.slice(0, 4).map((project, index) => (
