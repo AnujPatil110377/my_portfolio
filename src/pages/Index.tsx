@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCamera, faMusic, faHiking, faBook } from '@fortawesome/free-solid-svg-icons';
+import { faCamera, faMusic, faHiking, faBook, faRobot, faPlane } from '@fortawesome/free-solid-svg-icons';
 import ConnectCard from "../components/cards/ConnectCard";
 import ExperienceCard from "../components/cards/ExperienceCard";
 import AvatarGreeting from "../components/cards/AvatarGreeting";
