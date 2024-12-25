@@ -148,16 +148,32 @@ const Index = () => {
             </div>
           </div>
 
-          {/* New Additional Experience Card */}
+          {/* Experience Card */}
           <div className="bento-card">
-            <h2 className="text-2xl font-bold mb-4">Additional Experience</h2>
+            <h2 className="text-2xl font-bold mb-4">Experience</h2>
             <div className="space-y-4">
               <div className="border-l-2 border-gray-600 pl-4">
-                <h3 className="text-lg font-semibold text-gray-200">Senior Developer</h3>
-                <p className="text-gray-400">Tech Company</p>
-                <p className="text-sm text-gray-500">2022 - Present</p>
+                <h3 className="text-lg font-semibold text-gray-200">Research Assistant</h3>
+                <p className="text-gray-400">Distributed Systems Lab, IIT Jodhpur</p>
+                <p className="text-sm text-gray-500">2023 - 2024</p>
                 <p className="text-gray-300 mt-2">Led development of key features and mentored junior developers.</p>
               </div>
+            </div>
+
+            {/* Achievements Section */}
+            <div className="mt-8">
+              <h3 className="text-xl font-bold mb-4">Achievements</h3>
+              <ul className="list-none text-gray-300 space-y-3">
+                <li>
+                  Secured an <span className="text-white font-semibold">All India Rank of 6479</span> in <span className="text-white font-semibold">JEE Advanced</span>.
+                </li>
+                <li>
+                  Achieved <span className="text-white font-semibold">8th rank</span> in the <span className="text-white font-semibold">Inter IIT Ideaforge High Prep</span> competition, out of 23 teams.
+                </li>
+                <li>
+                  Co-authored a <span className="text-white font-semibold">research paper</span> presented at the <span className="text-white font-semibold">Indian Control Conference</span>.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
