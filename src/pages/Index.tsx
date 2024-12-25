@@ -64,7 +64,7 @@ const Index = () => {
         <div className="bento-card row-span-2">
           <h2 className="text-2xl font-bold mb-6">About me</h2>
           <p className="text-gray-300 text-lg mb-6">
-            I specialize in building modern web applications using React, TypeScript, and other cutting-edge technologies.
+           A pre-final year Electrical Engineering student at IIT Jodhpur. I am passionate about full-stack development and machine learning, with a focus on building scalable applications and data-driven models. I sharpen my problem-solving skills on LeetCode and have a strong foundation in data structures, algorithms, and optimization. My goal is to create innovative solutions that address real-world challenges.
           </p>
           <div className="space-y-4">
             <p className="text-lg text-gray-400">Things I do other than coding:</p>
