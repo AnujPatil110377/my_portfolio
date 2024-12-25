@@ -12,7 +12,7 @@ import ClockPlaylistCard from "../components/cards/ClockPlaylistCard";
 const Index = () => {
   const projects = [
     {
-      name: "Project 1",
+      name: "Mips Code Editor",
       description: "A full-stack web application built with React and Node.js",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
       githubUrl: "https://github.com/username/project1",
