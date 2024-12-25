@@ -11,7 +11,7 @@ const AboutCard = () => {
   return (
     <div className="bento-card row-span-2">
       <h2 className="text-2xl font-bold mb-6">About me</h2>
-      <p className="text-gray-300 text-lg mb-8">
+      <p className="text-gray-300 text-base mb-8">
   Hello, I'm <span className="text-blue-400 font-semibold">Anuj Patil</span>, 
   a Pre-final year undergraduate at <span className="text-blue-400 font-semibold">IIT Jodhpur</span> in 
   Electrical Engineering. I'm passionate about 
@@ -22,6 +22,7 @@ const AboutCard = () => {
   <span className="text-blue-400 font-semibold"> algorithms</span>. 
   I aim to create innovative solutions that solve real-world challenges.
 </p>
+
       
       <div className="space-y-4">
         <p className="text-lg text-gray-400">My hobbies:</p>
