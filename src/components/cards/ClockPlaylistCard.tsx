@@ -13,12 +13,12 @@ const SpotifyPlaylist = () => {
   const spotifyUrl = "https://open.spotify.com/playlist/YOUR_PLAYLIST_ID";
 
   return (
-    <div className="mt-4 rounded-lg bg-gray-900 p-4 group relative">
+    <div className="mt-4 rounded-lg bg-gray-900 p-4 w-[350px] group relative">
       {/* Playlist Header with Right-aligned Image */}
       <div className="flex justify-between items-start">
         <div className="flex-grow space-y-2">
           <div className="flex items-center space-x-2">
-            <Music2 className="w-4 h-4 text-gray-400" />
+            <Music2 className="w-6 h-4 text-gray-400" />
             <span className="text-sm text-gray-400">playlist:</span>
           </div>
           
