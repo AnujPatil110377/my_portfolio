@@ -97,7 +97,7 @@ const Index = () => {
             <h2 className="text-2xl font-bold mb-6">CV</h2>
             <p className="text-gray-300 mb-6">View and download my resume by clicking on the button below</p>
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1BVIGYSLYgCkN7JAdZN_W5q9cXaRSeVZW/view?usp=sharing"
               target="_blank"
               className="inline-flex items-center px-6 py-3 bg-[#F97316] hover:bg-[#EA580C] text-white rounded-lg transition-colors duration-200 font-medium"
             >
