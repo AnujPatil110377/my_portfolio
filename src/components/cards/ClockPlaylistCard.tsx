@@ -18,8 +18,8 @@ const SpotifyPlaylist = () => {
       <div className="flex items-start space-x-4">
         <div className="w-20 h-20 flex-shrink-0">
           <img 
-            src="/api/placeholder/400/400" 
-            alt="Daylight album cover" 
+            src="./download.jpg" 
+            // alt="Daylight album cover" 
             className="w-full h-full object-cover rounded-md"
           />
         </div>
