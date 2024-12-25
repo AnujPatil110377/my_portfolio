@@ -126,6 +126,31 @@ const Index = () => {
             ))}
           </div>
         </div>
+        {/* Projects and Additional Experience Section */}
+<div className="grid grid-cols-3 gap-4 col-span-3">
+  {/* Your existing Projects Card - keep as is */}
+  <div className="bento-card col-span-2">
+    <h2 className="text-2xl font-bold mb-4">Featured Projects</h2>
+    <div className="grid grid-cols-2 gap-4">
+      {projects.slice(0, 4).map((project, index) => (
+        <ProjectCard key={index} {...project} />
+      ))}
+    </div>
+  </div>
+
+  {/* New Additional Experience Card */}
+  <div className="bento-card">
+    <h2 className="text-2xl font-bold mb-4">Additional Experience</h2>
+    <div className="space-y-4">
+      <div className="border-l-2 border-gray-600 pl-4">
+        <h3 className="text-lg font-semibold text-gray-200">Senior Developer</h3>
+        <p className="text-gray-400">Tech Company</p>
+        <p className="text-sm text-gray-500">2022 - Present</p>
+        <p className="text-gray-300 mt-2">Led development of key features and mentored junior developers.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
         {/* Tech Stack Card */}
         <TechStackCard />
