@@ -58,34 +58,38 @@ const Index = () => {
           </div>
         </div>
 
-      {/* About Card */}
-<div className="bento-card row-span-2">
-  <h2 className="text-2xl font-bold mb-6">About me</h2>
-  <p className="text-gray-300 text-lg mb-6">
-    I specialize in building modern web applications using React, TypeScript, and other cutting-edge technologies.
-  </p>
-  <div className="space-y-4">
-    <p className="text-lg text-gray-400">Things I do other than coding:</p>
-    <ul className="list-none text-gray-300 text-lg space-y-2">
-      <li className="flex items-center space-x-2">
-        <i className="fas fa-camera text-gray-400"></i>
-        <span>Photography</span>
-      </li>
-      <li className="flex items-center space-x-2">
-        <i className="fas fa-music text-gray-400"></i>
-        <span>Music</span>
-      </li>
-      <li className="flex items-center space-x-2">
-        <i className="fas fa-hiking text-gray-400"></i>
-        <span>Hiking</span>
-      </li>
-      <li className="flex items-center space-x-2">
-        <i className="fas fa-book text-gray-400"></i>
-        <span>Reading</span>
-      </li>
-    </ul>
-  </div>
-</div>
+        import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+        import {faCamera, faMusic, faHiking, faBook} from '@fortawesome/free-solid-svg-icons';
+
+        {/* About Card */}
+        <div className="bento-card row-span-2">
+          <h2 className="text-2xl font-bold mb-6">About me</h2>
+          <p className="text-gray-300 text-lg mb-6">
+            I specialize in building modern web applications using React, TypeScript, and other cutting-edge technologies.
+          </p>
+          <div className="space-y-4">
+            <p className="text-lg text-gray-400">Things I do other than coding:</p>
+            <ul className="list-none text-gray-300 text-lg space-y-2">
+              <li className="flex items-center space-x-2">
+                <FontAwesomeIcon icon={faCamera} className="text-gray-400" />
+                <span>Photography</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <FontAwesomeIcon icon={faMusic} className="text-gray-400" />
+                <span>Music</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <FontAwesomeIcon icon={faHiking} className="text-gray-400" />
+                <span>Hiking</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <FontAwesomeIcon icon={faBook} className="text-gray-400" />
+                <span>Reading</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
 
 
         {/* CV Cards */}
