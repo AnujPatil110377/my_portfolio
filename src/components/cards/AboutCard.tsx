@@ -12,19 +12,16 @@ const AboutCard = () => {
     <div className="bento-card row-span-2">
       <h2 className="text-2xl font-bold mb-6">About me</h2>
       <p className="text-gray-300 text-lg mb-8">
-        Hello, I'm <span className="text-blue-400 font-semibold">Anuj Patil</span>, 
-        a Pre-final year undergraduate at <span className="text-blue-400 font-semibold">IIT Jodhpur</span>, 
-        pursuing a BTech in Electrical Engineering. I am passionate about 
-        <span className="text-blue-400 font-semibold"> Full Stack Development</span> and 
-        <span className="text-blue-400 font-semibold"> Machine Learning</span>, with a focus 
-        on building scalable applications and data-driven models. I actively engage in 
-        <span className="text-blue-400 font-semibold"> LeetCode</span> to enhance my 
-        problem-solving abilities and have a strong foundation in 
-        <span className="text-blue-400 font-semibold"> data structures</span>, 
-        <span className="text-blue-400 font-semibold"> algorithms</span>, and 
-        <span className="text-blue-400 font-semibold"> optimization techniques</span>. 
-        My goal is to create impactful solutions that drive innovation and solve real-world challenges.
-      </p>
+  Hello, I'm <span className="text-blue-400 font-semibold">Anuj Patil</span>, 
+  a Pre-final year undergraduate at <span className="text-blue-400 font-semibold">IIT Jodhpur</span> in 
+  Electrical Engineering. I'm passionate about 
+  <span className="text-blue-400 font-semibold"> Full Stack Development</span> and 
+  <span className="text-blue-400 font-semibold"> Machine Learning</span>. I actively solve problems on
+  <span className="text-blue-400 font-semibold"> LeetCode</span> and have expertise in 
+  <span className="text-blue-400 font-semibold"> data structures</span> and 
+  <span className="text-blue-400 font-semibold"> algorithms</span>. 
+  I aim to create innovative solutions that solve real-world challenges.
+</p>
       
       <div className="space-y-4">
         <p className="text-lg text-gray-400">My hobbies:</p>
