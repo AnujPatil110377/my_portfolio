@@ -10,7 +10,7 @@ const AvatarGreeting = () => {
     >
       {/* Rounded Corner Image */}
       <motion.img
-        src="/path-to-your-image.jpg" // Replace with your image path
+        src="/download.jpg" // Replace with your image path
         alt="Anuj Patil"
         className="w-40 h-40 rounded-xl object-cover"
         initial={{ scale: 0.9 }}
