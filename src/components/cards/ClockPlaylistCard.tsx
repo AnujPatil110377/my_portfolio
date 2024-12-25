@@ -10,7 +10,7 @@ const formatTime = (time) => {
 };
 
 const SpotifyPlaylist = () => {
-  const spotifyUrl = "https://open.spotify.com/playlist/YOUR_PLAYLIST_ID";
+  const spotifyUrl = "https://open.spotify.com/playlist/5ExhAwDV0OV1DWcECTr2ZH?si=28b22f697ef142d0";
 
   return (
     <div className="mt-4 rounded-lg bg-gray-900 p-4 w-[550px] group relative">
@@ -33,9 +33,9 @@ const SpotifyPlaylist = () => {
           <div className="flex items-center space-x-4 text-sm text-gray-400 mt-4">
             <span className="flex items-center space-x-1">
               <Clock className="w-4 h-4" />
-              <span>3hr 45min</span>
+              <span>3hr 17min</span>
             </span>
-            <span>• 42 songs</span>
+            <span>• 60 songs</span>
           </div>
         </div>
         
