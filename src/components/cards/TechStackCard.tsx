@@ -20,7 +20,7 @@ const TechStackCard = () => {
       { icon: <img src={TypeScriptIcon} alt="TypeScript" className="w-8 h-8 animate-bounce" />, name: "TypeScript" },
     ],
     frameworks: [
-      { icon: <img src={ROSIcon} alt="NEXTt.Js" className="w-8 h-8 animate-bounce" />, name: "NEXTt.Js" },
+      { icon: <img src={ROSIcon} alt="NEXT.Js" className="w-8 h-8 animate-bounce" />, name: "NEXT.Js" },
       { icon: <img src={PyTorchIcon} alt="PyTorch" className="w-8 h-8 animate-bounce" />, name: "PyTorch" },
       { icon: <img src={ReactIcon} alt="React" className="w-8 h-8 animate-bounce" />, name: "React" },
       { icon: <img src={NodeJsIcon} alt="Node.js" className="w-8 h-8 animate-bounce" />, name: "Node.js" },
