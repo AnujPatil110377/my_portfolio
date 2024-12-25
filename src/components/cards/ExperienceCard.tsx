@@ -141,17 +141,17 @@ const EducationCard = () => {
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.2, duration: 0.5 }}
-        className="text-3xl font-bold text-white mb-8"
+        className="text-3xl font-bold text-white mb-4"  // Reduced margin-bottom
       >
         Education
       </motion.h2>
       
-      <div className="space-y-12">
+      <div className="space-y-8"> {/* Reduced vertical space */}
         {/* BTech Education */}
         <motion.div 
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
           whileHover={{ x: 10 }}
           className="flex items-start gap-4"
         >
@@ -174,7 +174,7 @@ const EducationCard = () => {
         <motion.div 
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.6, duration: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
           whileHover={{ x: 10 }}
           className="flex items-start gap-4"
         >
@@ -198,4 +198,3 @@ const EducationCard = () => {
 };
 
 export default EducationCard;
-
