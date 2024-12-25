@@ -6,14 +6,22 @@
 
 @layer base {
   :root {
-    --background: 0 0% 7%;
-    --foreground: 0 0% 100%;
-    --card: 0 0% 10%;
-    --border: 0 0% 14.9%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --radius: 1rem;
+    --background: 0 0% 7%; /* Dark background */
+    --foreground: 0 0% 100%; /* White text */
+    --card: 0 0% 10%; /* Slightly lighter card background */
+    --border: 0 0% 14.9%; /* Muted border color */
+    --primary: 0 0% 98%; /* Light text for primary content */
+    --primary-foreground: 0 0% 9%; /* Foreground for primary elements */
+    --radius: 1rem; /* Border radius */
+    --bg-color: #1a1a1a; /* Background color */
+    --hover-bg-color: #242424; /* Hover background color */
+    --accent-color: #ffffff; /* Neutral light accent color */
+    --secondary-color: #ffffff; /* Neutral secondary color */
+    --text-muted-color: #b0b0b0; /* Muted text for secondary elements */
+    --badge-bg-color: #1a1a1a; /* Badge background color */
+    --hover-badge-bg-color: #242424; /* Hover background for badges */
   }
+  
 
   * {
     @apply border-border;
