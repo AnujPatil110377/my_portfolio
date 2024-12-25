@@ -61,7 +61,7 @@ const Index = () => {
         </div>
 
         {/* About Card */}
-        <div className="bento-card row-span-1">
+        <div className="bento-card row-span-1.5">
           <h2 className="text-2xl font-bold mb-6">About me</h2>
           <p className="text-gray-300 text-md mb-6">
           I’m an Electrical Engineering student at IIT Jodhpur, passionate about full-stack development and machine learning, focused on creating innovative solutions to real-world challenges.
