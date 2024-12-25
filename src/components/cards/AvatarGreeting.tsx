@@ -11,7 +11,7 @@ const AvatarGreeting = () => {
       <div className="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center">
         {/* Replace the src with your SVG image path */}
         <img 
-          src="/avatar.jpg" 
+          src="AnujPatil110377/b-4170/src/components/cards/avatar.jpg" 
           alt="Avatar"
           className="w-full h-full object-cover"
         />
