@@ -40,7 +40,7 @@ const TechStackCard = () => {
         {Object.entries(techStacks).map(([category, items]) => (
           <div
             key={category}
-            className={`flex-1 ${category === 'languages' ? 'bg-[#1E293B]' : category === 'frameworks' ? 'bg-[#003B46]' : 'bg-[#06B6D4]'} p-6 rounded-xl hover:scale-105 hover:shadow-md transition-all duration-300`}
+            className={`flex-1 ${category === 'languages' ? 'bg-[#1E293B]' : category === 'frameworks' ? 'bg-[#003B46]' : 'bg-[#26547C]'} p-6 rounded-xl hover:scale-105 hover:shadow-md transition-all duration-300`}
           >
             <h3 className={`text-xl font-semibold capitalize ${category === 'languages' ? 'text-white' : category === 'frameworks' ? 'text-gray-300' : 'text-[#FDE047]'} mb-6 text-center`}>
               {category}
