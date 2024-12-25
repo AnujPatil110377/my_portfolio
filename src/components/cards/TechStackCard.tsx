@@ -10,45 +10,65 @@ import {
   Globe,
 } from "lucide-react";
 
+import {
+  SiCplusplus,
+  SiPython,
+  SiJavascript,
+  SiTypescript,
+  SiRos,
+  SiPytorch,
+  SiReact,
+  SiNodedotjs,
+  SiLinux,
+  SiDocker,
+  SiMysql,
+  SiKubernetes,
+} from "react-icons/si";
+
 const TechStackCard = () => {
   const techStacks = {
     languages: [
-      { icon: <Cpu className="w-8 h-8" />, name: "C++" },
-      { icon: <Code2 className="w-8 h-8" />, name: "Python" },
-      { icon: <Globe className="w-8 h-8" />, name: "JavaScript" },
-      { icon: <Terminal className="w-8 h-8" />, name: "TypeScript" },
+      { icon: <SiCplusplus className="w-8 h-8" />, name: "C++" },
+      { icon: <SiPython className="w-8 h-8" />, name: "Python" },
+      { icon: <SiJavascript className="w-8 h-8" />, name: "JavaScript" },
+      { icon: <SiTypescript className="w-8 h-8" />, name: "TypeScript" },
     ],
     frameworks: [
-      { icon: <Bot className="w-8 h-8" />, name: "ROS" },
-      { icon: <Brain className="w-8 h-8" />, name: "PyTorch" },
-      { icon: <Code2 className="w-8 h-8" />, name: "React" },
-      { icon: <Server className="w-8 h-8" />, name: "Node.js" },
+      { icon: <SiRos className="w-8 h-8" />, name: "ROS" },
+      { icon: <SiPytorch className="w-8 h-8" />, name: "PyTorch" },
+      { icon: <SiReact className="w-8 h-8" />, name: "React" },
+      { icon: <SiNodedotjs className="w-8 h-8" />, name: "Node.js" },
     ],
     tools: [
-      { icon: <Terminal className="w-8 h-8" />, name: "Linux" },
-      { icon: <Container className="w-8 h-8" />, name: "Docker" },
-      { icon: <Database className="w-8 h-8" />, name: "MySQL" },
-      { icon: <Server className="w-8 h-8" />, name: "Kubernetes" },
+      { icon: <SiLinux className="w-8 h-8" />, name: "Linux" },
+      { icon: <SiDocker className="w-8 h-8" />, name: "Docker" },
+      { icon: <SiMysql className="w-8 h-8" />, name: "MySQL" },
+      { icon: <SiKubernetes className="w-8 h-8" />, name: "Kubernetes" },
     ],
   };
 
   return (
-    <div className="bento-card col-span-3 bg-[#0A192F] hover:bg-[#112240] transition-all duration-300">
-      <h2 className="text-2xl font-bold mb-6 text-[#4FD1C5]">Tech Stack</h2>
+    <div className="bento-card col-span-3 bg-black hover:shadow-lg transition-all duration-300 p-6 rounded-lg">
+      <h2 className="text-2xl font-bold mb-6 text-gray-200">Tech Stack</h2>
       <div className="flex flex-row justify-between gap-8">
         {Object.entries(techStacks).map(([category, items]) => (
-          <div key={category} className="flex-1 bg-[#112240] p-6 rounded-xl">
-            <h3 className="text-xl font-semibold capitalize text-[#FF66C4] mb-6 text-center">{category}</h3>
+          <div
+            key={category}
+            className="flex-1 bg-gray-800 p-6 rounded-xl hover:scale-105 hover:shadow-md transition-all duration-300"
+          >
+            <h3 className="text-xl font-semibold capitalize text-gray-400 mb-6 text-center">
+              {category}
+            </h3>
             <div className="grid grid-cols-2 gap-6">
               {items.map((item, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center space-y-2 p-3 transition-all duration-300 hover:scale-110 hover:bg-[#1A2F4C] rounded-lg group"
+                  className="flex flex-col items-center space-y-2 p-3 transition-all duration-300 hover:bg-gray-700 rounded-lg group"
                 >
-                  <div className="text-[#8892B0] group-hover:text-[#4FD1C5] transition-colors duration-300 animate-bounce-slow">
+                  <div className="text-gray-400 group-hover:text-gray-200 transition-colors duration-300">
                     {item.icon}
                   </div>
-                  <span className="text-sm text-center text-[#8892B0] group-hover:text-white transition-colors duration-300">
+                  <span className="text-sm text-center text-gray-400 group-hover:text-white transition-colors duration-300">
                     {item.name}
                   </span>
                 </div>
