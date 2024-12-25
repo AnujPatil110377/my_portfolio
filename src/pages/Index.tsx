@@ -59,29 +59,9 @@ const Index = () => {
           </div>
         </div>
 
-<<<<<<< HEAD
-        {/* About Card */}
-        <div className="bento-card row-span-2">
-          <h2 className="text-2xl font-bold mb-6">About me</h2>
-          <p className="text-gray-300 text-lg mb-6">
-          Hello, I'm Anuj Patil, a Pre-final year undergraduate at IIT Jodhpur, pursuing a BTech in Electrical Engineering. I am passionate about Full Stack Development and Machine Learning, with a focus on building scalable applications and data-driven models. I actively engage in LeetCode to enhance my problem-solving abilities and have a strong foundation in data structures, algorithms, and optimization techniques. My goal is to create impactful solutions that drive innovation and solve real-world challenges.
-          </p>
-          <div className="space-y-4">
-            <p className="text-lg text-gray-400">My tools:</p>
-            <ul className="list-disc list-inside text-gray-300 text-lg space-y-2">
-              <li>React</li>
-              <li>TypeScript</li>
-              <li>Node.js</li>
-              <li>Tailwind CSS</li>
-            </ul>
-          </div>
-        </div>
-
-=======
         {/* About Card */}
         <AboutCard />
 
->>>>>>> 3aacdf66fe82767a80a86abf47b422c351c76e48
         {/* CV Cards */}
         <div className="space-y-4">
           <div className="bento-card">
