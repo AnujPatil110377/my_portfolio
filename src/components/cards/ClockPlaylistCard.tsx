@@ -25,7 +25,7 @@ const SpotifyPlaylist = () => {
           <div className="space-y-1">
             <h3 className="text-xl font-bold text-white">songs I was once hooked to</h3>
             <p className="text-sm text-gray-400">
-              these songs are the ones that I was atleast once in my life obsessed with. obsessed as in, listen to it on repeat kinda obsessed
+            These songs are the ones that I was obsessed with at least once in my life. Obsessed as in, listen to it on repeat, kinda obsessed
             </p>
           </div>
           
