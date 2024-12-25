@@ -4,8 +4,8 @@ const AvatarGreeting = () => {
   return (
     <motion.div
       className="relative w-32 h-32"
-      initial={{ scale: 0.8 }}
-      animate={{ scale: 1 }}
+      initial={{ scale: 1 }}
+      animate={{ scale: 2 }}
       transition={{ duration: 0.5 }}
     >
       <div className="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center">
