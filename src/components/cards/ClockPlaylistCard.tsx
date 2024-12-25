@@ -48,7 +48,7 @@ const ClockPlaylistCard = () => {
   }, []);
 
   return (
-    <div className="bento-card bg-gray-900 p-6 rounded-xl">
+    <div className="bento-card bg-[#26547C] p-6 rounded-xl">
       <div className="clock-section border-b border-gray-800 pb-6">
         <h2 className="text-lg text-gray-400 mb-4">Current Time</h2>
         <div className="text-4xl font-bold mb-4 text-white">
