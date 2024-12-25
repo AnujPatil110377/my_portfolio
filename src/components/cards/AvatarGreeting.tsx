@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 const AvatarGreeting = () => {
   return (
     <motion.div 
-      className="relative w-32 h-32"
-      initial={{ scale: 0.8 }}
-      animate={{ scale: 1 }}
+      className="relative w-40 h-40"
+      initial={{ scale: 1 }}
+      animate={{ scale: 1.5 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="w-32 h-32 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center">
+      <div className="w-40 h-40 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center">
         <span className="text-4xl">👋</span>
       </div>
       <motion.div
