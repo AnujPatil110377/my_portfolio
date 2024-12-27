@@ -1,1 +1,1 @@
-# Welcome to your Lovable Project!
+# my personal portfolio project 
