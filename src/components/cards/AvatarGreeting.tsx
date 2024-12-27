@@ -22,7 +22,7 @@ const AvatarGreeting = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
       >
-        <p className="text-sm font-medium">Hello!</p>
+        <p className="text-sm font-medium">Greetings.</p>
       </motion.div>
     </motion.div>
   );
