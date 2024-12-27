@@ -50,7 +50,7 @@ const Index = () => {
           <div className="flex items-center justify-between space-x-12">
             <div className="flex-1">
               <h1 className="text-4xl font-bold mb-4">
-                Hi, I'm <span className="text-blue-400">Anuj Patil</span>
+                I'm <span className="text-blue-400">Anuj Patil</span>
               </h1>
               <p className="text-gray-300 text-lg">
                 I am a passionate <span className="text-blue-400 font-semibold">software developer</span> with a strong focus on <span className="text-blue-400 font-semibold">cloud services</span>, <span className="text-blue-400 font-semibold">microservices</span>, and <span className="text-blue-400 font-semibold">IoT technologies</span>. My interests extend to <span className="text-blue-400 font-semibold">machine learning</span> and <span className="text-blue-400 font-semibold">robotics</span>, where I enjoy aeromodelling as a hobby. With a solid foundation in core computer science concepts like <span className="text-blue-400 font-semibold">data structures</span> and <span className="text-blue-400 font-semibold">algorithms</span>, I continuously hone my skills through competitive coding on <span className="text-blue-400 font-semibold">LeetCode</span>. The fascinating fields of <span className="text-blue-400 font-semibold">deep learning</span> and <span className="text-blue-400 font-semibold">large language models (LLMs)</span> motivate me to stay at the forefront of technology.
