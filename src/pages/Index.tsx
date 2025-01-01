@@ -14,9 +14,9 @@ const Index = () => {
     {
       name: "MIPS Web IDE",
       description: "Write, run, and debug MIPS code with AI-assisted error fixes.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      image: "/mips.png",
       githubUrl: "https://github.com/AnujPatil110377/Mips_simulator",
-      liveUrl: "https://project1.demo"
+      liveUrl: "https://mipseditor.netlify.app/"
     },
     {
       name: "TweetSense Analyzer",
@@ -142,7 +142,6 @@ const Index = () => {
                 <h3 className="text-lg font-semibold text-gray-200">Research Assistant</h3>
                 <p className="text-gray-400">Distributed Systems Lab, IIT Jodhpur</p>
                 <p className="text-sm text-gray-500">2023 - 2024</p>
-                <p className="text-gray-300 mt-2">Led development of key features and mentored junior developers.</p>
               </div>
             </div>
 
